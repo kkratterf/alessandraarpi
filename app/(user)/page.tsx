@@ -49,6 +49,7 @@ export default async function HomePage() {
   return (
     <div className="space-y-40 sm:space-y-96 overflow-hidden overscroll-none">
       <ProvaButton />
+      <div>vediamo se funziona diocane</div>
       <FeaturedProjectList projects={projects} />
     </div>
   );
