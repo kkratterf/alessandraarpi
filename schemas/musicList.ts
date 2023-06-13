@@ -11,6 +11,11 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'src',
+      title: 'Src',
+      type: 'string',
+    }),
+    defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -24,6 +29,5 @@ export default defineType({
       title: 'Visible',
       type: 'boolean',
     }),
-
   ],
 });

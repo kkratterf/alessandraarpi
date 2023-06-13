@@ -1,19 +1,24 @@
 // Import core
 // Import third parts
+import { TypeAnimation } from 'react-type-animation';
 // Import customs
 
 function Loader() {
 
   return (
-    <div className="loader flex items-center fixed top-0 left-0 cursor-wait select-none w-full h-full z-50">
-      <p className="text-center mx-auto text-3xl leading-normal space-y-4 font-medium z-40 !cursor-progress">
-        <span className="hello">
-          <span className="italic">Hello</span>,
-        </span>
-        <br className="md:hidden"></br>
-        <span className="iam ml-4 mt-4">
-          I am <span className="text-red">Federico</span>
-        </span>
+    <div className="background flex items-center fixed top-0 left-0 bg-cream cursor-wait select-none w-full h-full z-50">
+      <p className="text-center mx-auto text-3xl text-red leading-normal space-y-4 z-40 !cursor-progress">
+        <TypeAnimation
+          sequence={[
+            // Same substring at the start will only be typed out once, initially
+            'All good things takes times',
+            1000, // wait 1s before replacing "Mice" with "Hamsters"
+            '',
+          ]}
+          wrapper="span"
+          speed={2}
+          style={{ fontSize: '1em', display: 'inline-block' }}
+        />
       </p>
     </div>
   );

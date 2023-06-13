@@ -23,37 +23,25 @@ interface Project extends Base {
   realizedAt: Date;
 }
 
-interface Client extends Base {
-  name: string;
+interface ReadingList extends Base {
+  title: string;
   slug: Slug;
+  visible: boolean;
+  strike: boolean;
 }
 
-interface Award extends Base {
+interface ToReadList extends Base {
   title: string;
-  brand: string;
-  date: string;
-  description: text;
+  slug: Slug;
+  visible: boolean;
+  strike: boolean;
 }
 
-interface Certification extends Base {
+interface MusicList extends Base {
   title: string;
-  school: string;
-  date: string;
-  description: text;
-}
-
-interface Education extends Base {
-  title: string;
-  school: string;
-  fromto: string;
-  description: text;
-}
-
-interface Experience extends Base {
-  role: string;
-  brand: string;
-  fromto: string;
-  description: text;
+  src: string;
+  slug: Slug;
+  visible: boolean;
 }
 
 interface Number {
@@ -89,16 +77,6 @@ interface Span {
     _type: "span";
     marks: string[];
     text: string;
-}
-
-interface Category extends Base {
-    description: string;
-    title: string;
-}
-
-interface Team extends Base {
-  name: string;
-  slug: Slug;
 }
 
 interface MainImage {
