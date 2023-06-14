@@ -19,7 +19,7 @@ export default function RootLayout({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 8600);
+    setTimeout(() => setLoading(false), 1 /*8600*/);
   });
 
   return (
@@ -29,11 +29,9 @@ export default function RootLayout({
           id="top"
           className="mx-auto h-screen p-4 sm:p-6 overflow-hidden"
         >
-          <>
-            {!loading ? <></> : <Loader />}
-            <Header />
-            {children}
-          </>
+          {loading && <Loader />}
+          <Header />
+          {children}
           <AnalyticsWrapper />
         </body>
       </Providers>

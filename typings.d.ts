@@ -44,6 +44,13 @@ interface MusicList extends Base {
   visible: boolean;
 }
 
+interface Photos extends Base {
+  title: string;
+  slug: Slug;
+  mainImage: Image;
+  visible: boolean;
+}
+
 interface Number {
   _type: "number";
   current: number;
