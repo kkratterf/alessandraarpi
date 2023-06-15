@@ -1,7 +1,7 @@
 import blockContent from './blockContent';
 import musicList from './musicList';
 import photos from './photos';
-import project from './project';
+import projects from './projects';
 import readingList from './readingList';
 import shoppingList from './shoppingList';
 import toReadList from './toReadList';
@@ -12,6 +12,6 @@ export const schemaTypes = [
   shoppingList,
   musicList,
   photos,
-  project,
+  projects,
   blockContent,
 ];

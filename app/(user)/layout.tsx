@@ -23,7 +23,7 @@ export default function RootLayout({
   });
 
   return (
-    <html className="scroll-smooth">
+    <html>
       <Providers>
         <body
           id="top"

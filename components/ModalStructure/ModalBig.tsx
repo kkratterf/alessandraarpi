@@ -10,9 +10,11 @@ interface ModalBigProps {
   closeFunction: () => void;
   title: string;
   extension: string;
+  x: number,
+  y: number,
 }
 
-function ModalBig({ children, closeFunction, title, extension }: ModalBigProps) {
+function ModalBig({ children, closeFunction, title, extension, x, y }: ModalBigProps) {
   const eventLogger = (e: DraggableEvent, data: any) => {
     console.log('Event: ', e);
     console.log('Data: ', data);
@@ -21,7 +23,7 @@ function ModalBig({ children, closeFunction, title, extension }: ModalBigProps) 
     <Draggable
       axis="both"
       handle=".handle"
-      defaultPosition={{ x: 400, y: 100 }}
+      defaultPosition={{ x, y }}
       grid={[1, 1]}
       scale={1}
       onStart={eventLogger}

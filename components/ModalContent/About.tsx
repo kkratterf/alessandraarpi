@@ -5,7 +5,7 @@
 function AboutModal() {
 
   return (
-    <div className="text-xl cursor-default overflow-y-scroll h-56 font-bold m-4 text-black">
+    <div className="text-2xl cursor-default overflow-y-scroll h-56 font-bold m-4 text-black">
       Sono Alessandra Arpi e di lavoro faccio parlare aziende, professionisti e
       istituzioni come delle persone e non come delle pubblicità anni ’80. Mi
       fanno paura i luoghi comuni e le frasi che non vogliono dire niente, il

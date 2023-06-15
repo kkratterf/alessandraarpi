@@ -3,15 +3,23 @@
 // Import core
 // Import third parts
 import Image from "next/image";
-import urlFor from "../lib/urlFor";
 import { PortableText } from "@portabletext/react";
 import { motion } from "framer-motion";
+import Link from 'next/link';
+import { StaticImageData } from 'next/image';
 // Import customs
 import { RichTextComponents } from "../components/RichTextComponents";
-import Link from "next/link";
+import urlFor from '../lib/urlFor';
+import { Block } from '../typings';
 
-function Article(props: any) {
-  const project = props.project
+type ArticleProps = {
+  category: string;
+  title: string;
+  image: StaticImageData;
+  body: Block[];
+};
+
+function Article({ category, title, image, body }: ArticleProps) {
 
   return (
     <motion.section
@@ -23,12 +31,14 @@ function Article(props: any) {
       <article>
         <section className="space-y-6 sm:space-y-10">
           <div className="space-y-3 sm:space-y-4">
-            <h6 className="text-base sm:text-xl font-medium">{project.category.title}</h6>
-            <h1 className="font-bold text-4xl sm:text-6xl">{project.title}</h1>
+            <h6 className="text-base sm:text-xl font-medium">
+              {category}
+            </h6>
+            <h1 className="font-bold text-4xl sm:text-6xl">{title}</h1>
           </div>
           <div className="relative w-full h-116 md:h-128 bg-grey-light dark:bg-pop-dark rounded-xl overflow-hidden">
             <Image
-              src={urlFor(project.mainImage).url()}
+              src={urlFor(image).url()}
               className="object-center object-cover rounded-xl"
               alt="Federico Kratter Thaler"
               fill
@@ -37,7 +47,7 @@ function Article(props: any) {
         </section>
 
         <section className="mt-20 sm:mt-40">
-          <PortableText value={project.body} components={RichTextComponents} />
+          <PortableText value={body} components={RichTextComponents} />
         </section>
         <section>
           <h4 className="text-2xl sm:text-4xl mt-20">

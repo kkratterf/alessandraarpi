@@ -8,7 +8,7 @@ type Base = {
     _updatedAt: string;
 }
 
-interface Project extends Base {
+interface Projects extends Base {
   client: Client;
   body: Block[];
   category: Category;
@@ -17,7 +17,6 @@ interface Project extends Base {
   slug: Slug;
   title: string;
   description: string;
-  featured: boolean;
   visible: boolean;
   order: number;
   realizedAt: Date;
@@ -42,6 +41,13 @@ interface MusicList extends Base {
   src: string;
   slug: Slug;
   visible: boolean;
+}
+
+interface ShoppingList extends Base {
+  title: string;
+  slug: Slug;
+  visible: boolean;
+  strike: boolean;
 }
 
 interface Photos extends Base {

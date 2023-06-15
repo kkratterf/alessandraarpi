@@ -27,6 +27,13 @@ const PhotosDesktop = ({ photos }: PhotosDesktopProps) => {
   }
   const title = 'fotine';
   const extension = '.fol';
+  const extensionPhoto = '.img';
+  const xDesktop = 400;
+  const yDesktop = 70;
+  const xModal = 500;
+  const yModal = 50;
+  const xSubModal = 600;
+  const ySubModal = 200;
 
   const [isSubOpen, setIsSubOpen] = useState(false);
   function closeSubModal() {
@@ -43,12 +50,16 @@ const PhotosDesktop = ({ photos }: PhotosDesktopProps) => {
         openFunction={openModal}
         title={title}
         extension={extension}
+        x={xDesktop}
+        y={yDesktop}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
+          x={xModal}
+          y={yModal}
         >
           <PhotosModal photos={photos} openFunction={openSubModal} />
         </ModalBig>
@@ -57,7 +68,9 @@ const PhotosDesktop = ({ photos }: PhotosDesktopProps) => {
         <ModalSmall
           closeFunction={closeSubModal}
           title={selectedPhoto.title}
-          extension={extension}
+          extension={extensionPhoto}
+          x={xSubModal}
+          y={ySubModal}
         >
           <PhotoModal
             id={selectedPhoto._id}

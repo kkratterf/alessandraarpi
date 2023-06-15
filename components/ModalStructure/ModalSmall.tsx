@@ -9,9 +9,11 @@ interface ModalSmallProps {
   closeFunction: () => void;
   title: string;
   extension: string;
+  x: number,
+  y: number,
 }
 
-function ModalSmall({ children, closeFunction, title, extension }: ModalSmallProps) {
+function ModalSmall({ children, closeFunction, title, extension, x, y }: ModalSmallProps) {
   const eventLogger = (e: DraggableEvent, data: any) => {
     console.log('Event: ', e);
     console.log('Data: ', data);
@@ -20,7 +22,7 @@ function ModalSmall({ children, closeFunction, title, extension }: ModalSmallPro
     <Draggable
       axis="both"
       handle=".handle"
-      defaultPosition={{ x: 400, y: 100 }}
+      defaultPosition={{ x, y }}
       grid={[1, 1]}
       scale={1}
       onStart={eventLogger}

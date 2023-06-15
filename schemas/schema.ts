@@ -6,8 +6,8 @@ import toReadList from './toReadList'
 import shoppingList from './shoppingList'
 import musicList from './musicList'
 import photos from './photos'
-import project from './project'
+import projects from './projects'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [readingList, toReadList, shoppingList, musicList, photos, project, blockContent],
+  types: [readingList, toReadList, shoppingList, musicList, photos, projects, blockContent],
 }

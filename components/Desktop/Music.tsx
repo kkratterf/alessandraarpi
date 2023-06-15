@@ -24,6 +24,10 @@ const MusicListDesktop = ({ musicList }: MusicListDesktopProps) => {
   }
   const title = 'musica ora in fissa per scrivere';
   const extension = '.txt';
+  const xDesktop = 200;
+  const yDesktop = 200;
+  const xModal = 200;
+  const yModal = 200;
 
   return (
     <>
@@ -31,12 +35,16 @@ const MusicListDesktop = ({ musicList }: MusicListDesktopProps) => {
         openFunction={openModal}
         title={title}
         extension={extension}
+        x={xDesktop}
+        y={yDesktop}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
+          x={xModal}
+          y={yModal}
         >
           <MusicModal musicList={musicList} />
         </ModalBig>
