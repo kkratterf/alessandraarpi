@@ -1,8 +1,7 @@
 'use client';
 
 // Import core
-import NextImage from 'next/image';
-import { StaticImageData } from 'next/image';
+import NextImage, { ImageProps } from 'next/image';
 // Import third parts
 import urlFor from '../../lib/urlFor';
 // Import customs
@@ -10,7 +9,7 @@ import urlFor from '../../lib/urlFor';
 type PhotoModalProps = {
   title: string;
   id: string;
-  image: StaticImageData;
+  image: any;
 };
 
 function PhotoModal({ id, image, title }: PhotoModalProps) {

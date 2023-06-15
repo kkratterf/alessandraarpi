@@ -3,7 +3,6 @@
 // Import core
 // Import third parts
 import NextImage from 'next/image';
-import { StaticImageData } from 'next/image';
 // Import customs
 import { Block } from '../../typings';
 import Article from '../Article';
@@ -12,7 +11,7 @@ import urlFor from '../../lib/urlFor';
 type ProjectModalProps = {
   title: string;
   id: string;
-  image: StaticImageData;
+  image: any;
   category: string;
   body: Block[];
 };

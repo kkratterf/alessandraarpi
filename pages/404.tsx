@@ -1,16 +1,12 @@
 // Import core
 // Import third parts
-import { AnalyticsWrapper } from "../components/AnalyticsWrapper";
 import Link from "next/link";
 // Import customs
 import "../styles/font.css";
 import "../styles/globals.css";
-import Providers from "../components/Providers";
 
 export default function Custom404() {
   return (
-    <>
-      <Providers>
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 md:px-10 xl:px-16 overflow-hidden flex items-stretch">
           <div className="flex items-center w-[100vw] h-[100vh]">
             <div className="space-y-6 sm:space-y-10 relative z-50">
@@ -23,9 +19,6 @@ export default function Custom404() {
               </h4>
             </div>
           </div>
-          <AnalyticsWrapper />
         </div>
-      </Providers>
-    </>
   );
 }
