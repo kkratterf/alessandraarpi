@@ -4,10 +4,10 @@
 // Import third parts
 import NextImage from 'next/image';
 import { StaticImageData } from 'next/image';
-import urlFor from '../../lib/urlFor';
-import Article from '../Article';
 // Import customs
 import { Block } from '../../typings';
+import Article from '../Article';
+import urlFor from '../../lib/urlFor';
 
 type ProjectModalProps = {
   title: string;

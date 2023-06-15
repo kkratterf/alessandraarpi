@@ -2,8 +2,8 @@
 // Import core
 // Import third parts
 import Draggable, { DraggableEvent } from 'react-draggable';
-import CloseButton from '../CloseButton';
 // Import customs
+import CloseButton from '../CloseButton';
 
 interface ModalBigProps {
   children: React.ReactNode;

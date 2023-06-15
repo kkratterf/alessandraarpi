@@ -2,11 +2,10 @@
 
 // Import core
 // Import third parts
-import Image from "next/image";
+import Link from 'next/link';
+import Image, { StaticImageData } from 'next/image';
 import { PortableText } from "@portabletext/react";
 import { motion } from "framer-motion";
-import Link from 'next/link';
-import { StaticImageData } from 'next/image';
 // Import customs
 import { RichTextComponents } from "../components/RichTextComponents";
 import urlFor from '../lib/urlFor';

@@ -1,9 +1,9 @@
 'use client';
 
 // Import core
-// Import third parts
 import NextImage from 'next/image';
 import { StaticImageData } from 'next/image';
+// Import third parts
 import urlFor from '../../lib/urlFor';
 // Import customs
 

@@ -1,7 +1,6 @@
 'use client';
 
 // Import core
-import React from 'react';
 import { useState } from 'react';
 // Import third parts
 // Import customs
