@@ -23,10 +23,8 @@ const ToReadListDesktop = ({ toReadList }: ToReadListDesktopProps) => {
   }
   const title = 'vorrei leggere appena trovo il tempo';
   const extension = '.txt';
-  const xDesktop = 500;
-  const yDesktop = 50;
-  const xModal = 500;
-  const yModal = 50;
+  const iconStyle = 'icon-style-global';
+  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
@@ -34,16 +32,14 @@ const ToReadListDesktop = ({ toReadList }: ToReadListDesktopProps) => {
         openFunction={openModal}
         title={title}
         extension={extension}
-        x={xDesktop}
-        y={yDesktop}
+        iconStyle={iconStyle}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
-          x={xModal}
-          y={yModal}
+          modalStyle={modalStyle}
         >
           <ToReadListModal toReadList={toReadList} />
         </ModalBig>

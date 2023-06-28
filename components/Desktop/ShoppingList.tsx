@@ -23,10 +23,8 @@ const ShoppingListDesktop = ({ shoppingList }: ShoppingListDesktopProps) => {
   }
   const title = 'voglio compare';
   const extension = '.txt';
-  const xDesktop = 600;
-  const yDesktop = 600;
-  const xModal = 100;
-  const yModal = 300;
+  const iconStyle = 'icon-style-global';
+  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
@@ -34,16 +32,14 @@ const ShoppingListDesktop = ({ shoppingList }: ShoppingListDesktopProps) => {
         openFunction={openModal}
         title={title}
         extension={extension}
-        x={xDesktop}
-        y={yDesktop}
+        iconStyle={iconStyle}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
-          x={xModal}
-          y={yModal}
+          modalStyle={modalStyle}
         >
           <ShoppingListModal shoppingList={shoppingList} />
         </ModalBig>

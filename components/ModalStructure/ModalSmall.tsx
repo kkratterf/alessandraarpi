@@ -1,6 +1,6 @@
 // Import core
 // Import third parts
-import Draggable, { DraggableEvent } from 'react-draggable';
+import { motion } from 'framer-motion';
 // Import customs
 import CloseButton from '../CloseButton';
 
@@ -9,25 +9,17 @@ interface ModalSmallProps {
   closeFunction: () => void;
   title: string;
   extension: string;
-  x: number,
-  y: number,
+  subModalStyle: string;
 }
 
-function ModalSmall({ children, closeFunction, title, extension, x, y }: ModalSmallProps) {
-  const eventLogger = (e: DraggableEvent, data: any) => {
-    console.log('Event: ', e);
-    console.log('Data: ', data);
-  };
+function ModalSmall({ children, closeFunction, title, extension, subModalStyle }: ModalSmallProps) {
+  
   return (
-    <Draggable
-      axis="both"
-      handle=".handle"
-      defaultPosition={{ x, y }}
-      grid={[1, 1]}
-      scale={1}
-      onStart={eventLogger}
-      onDrag={eventLogger}
-      onStop={eventLogger}
+    <motion.div
+      drag
+      dragElastic={0.1}
+      dragMomentum={false}
+      className={subModalStyle}
     >
       <div className="absolute cursor-grab select-none z-50 bg-white border-black w-96 overflow-hidden border rounded-xl">
         <div className="handle flex justify-stretch w-full border-black border-b p-4 pb-3">
@@ -41,7 +33,7 @@ function ModalSmall({ children, closeFunction, title, extension, x, y }: ModalSm
         </div>
         {children}
       </div>
-    </Draggable>
+    </motion.div>
   );
 }
 

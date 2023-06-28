@@ -18,10 +18,8 @@ const CookiesDesktop = () => {
   }
   const title = 'cookies';
   const extension = '.txt';
-  const xDesktop = 800;
-  const yDesktop = 20;
-  const xModal = 10;
-  const yModal = 10;
+  const iconStyle = 'icon-style-global';
+  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
@@ -29,16 +27,14 @@ const CookiesDesktop = () => {
         openFunction={openModal}
         title={title}
         extension={extension}
-        x={xDesktop}
-        y={yDesktop}
+        iconStyle={iconStyle}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
-          x={xModal}
-          y={yModal}
+          modalStyle={modalStyle}
         >
           <CookiesModal />
         </ModalBig>

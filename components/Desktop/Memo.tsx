@@ -18,10 +18,8 @@ const MemoDesktop = () => {
   }
   const title = 'memo';
   const extension = '.txt';
-  const xDesktop = 1100;
-  const yDesktop = 600;
-  const xModal = 200;
-  const yModal = 500;
+  const iconStyle = 'icon-style-global';
+  const modalStyle = 'modal ml-80';
 
   return (
     <>
@@ -29,16 +27,14 @@ const MemoDesktop = () => {
         openFunction={openModal}
         title={title}
         extension={extension}
-        x={xDesktop}
-        y={yDesktop}
+        iconStyle={iconStyle}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
-          x={xModal}
-          y={yModal}
+          modalStyle={modalStyle}
         >
           <MemoModal />
         </ModalBig>

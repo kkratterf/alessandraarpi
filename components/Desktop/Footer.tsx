@@ -18,10 +18,8 @@ const FooterDesktop = () => {
   }
   const title = 'footer';
   const extension = '.txt';
-  const xDesktop = 900;
-  const yDesktop = 60;
-  const xModal = 20;
-  const yModal = 50;
+  const iconStyle = 'icon-style-global';
+  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
@@ -29,16 +27,14 @@ const FooterDesktop = () => {
         openFunction={openModal}
         title={title}
         extension={extension}
-        x={xDesktop}
-        y={yDesktop}
+        iconStyle={iconStyle}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
-          x={xModal}
-          y={yModal}
+          modalStyle={modalStyle}
         >
           <FooterModal />
         </ModalBig>

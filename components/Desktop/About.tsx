@@ -18,10 +18,8 @@ const AboutDesktop = () => {
   }
   const title = 'ciao, inizia da qui';
   const extension = '.txt';
-  const xDesktop = 700;
-  const yDesktop = 250;
-  const xModal = 700;
-  const yModal = 250;
+  const iconStyle = 'icon-style-global ml-80';
+  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
@@ -29,16 +27,14 @@ const AboutDesktop = () => {
         openFunction={openModal}
         title={title}
         extension={extension}
-        x={xDesktop}
-        y={yDesktop}
+        iconStyle={iconStyle}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
-          x={xModal}
-          y={yModal}
+          modalStyle={modalStyle}
         >
           <AboutModal />
         </ModalBig>

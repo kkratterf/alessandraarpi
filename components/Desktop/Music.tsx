@@ -23,10 +23,8 @@ const MusicListDesktop = ({ musicList }: MusicListDesktopProps) => {
   }
   const title = 'musica ora in fissa per scrivere';
   const extension = '.txt';
-  const xDesktop = 200;
-  const yDesktop = 200;
-  const xModal = 200;
-  const yModal = 200;
+  const iconStyle = 'icon-style-global';
+  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
@@ -34,16 +32,14 @@ const MusicListDesktop = ({ musicList }: MusicListDesktopProps) => {
         openFunction={openModal}
         title={title}
         extension={extension}
-        x={xDesktop}
-        y={yDesktop}
+        iconStyle={iconStyle}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
-          x={xModal}
-          y={yModal}
+          modalStyle={modalStyle}
         >
           <MusicModal musicList={musicList} />
         </ModalBig>

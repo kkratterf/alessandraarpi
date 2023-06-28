@@ -18,10 +18,8 @@ const NewsletterDesktop = () => {
   }
   const title = 'newsletter';
   const extension = '.txt';
-  const xDesktop = 1000;
-  const yDesktop = 540;
-  const xModal = 200;
-  const yModal = 500;
+  const iconStyle = 'icon-style-global';
+  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
@@ -29,16 +27,14 @@ const NewsletterDesktop = () => {
         openFunction={openModal}
         title={title}
         extension={extension}
-        x={xDesktop}
-        y={yDesktop}
+        iconStyle={iconStyle}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
-          x={xModal}
-          y={yModal}
+          modalStyle={modalStyle}
         >
           <NewsletterModal />
         </ModalBig>

@@ -45,6 +45,18 @@
 
 @layer components {
 
+  .icon-style-global {
+    @apply fixed z-10
+  }
+
+  .modal-style-global {
+    @apply fixed z-20
+  }
+
+  .submodal-style-global {
+    @apply fixed z-30
+  }
+
   .navitem {
     @apply cursor-pointer text-sm italic text-left sm:text-right font-medium uppercase sm:opacity-70 sm:hover:opacity-100 text-cream dark:text-red transition duration-500;
   }
@@ -54,8 +66,8 @@
   }
 
   .background {
-        animation: background-exit 8.6s ease-in-out;
-        -webkit-animation: background-exit 8.6s ease-in-out;
+        animation: background-exit 9s ease-in-out;
+        -webkit-animation: background-exit 9s ease-in-out;
 }
 
     @keyframes background-exit {

@@ -23,10 +23,8 @@ const ReadingListDesktop = ({ readingList }: ReadingListDesktopProps) => {
   }
   const title = 'sto leggendo';
   const extension = '.txt';
-  const xDesktop = 400;
-  const yDesktop = 200;
-  const xModal = 400;
-  const yModal = 200;
+  const iconStyle = 'icon-style-global';
+  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
@@ -34,16 +32,14 @@ const ReadingListDesktop = ({ readingList }: ReadingListDesktopProps) => {
         openFunction={openModal}
         title={title}
         extension={extension}
-        x={xDesktop}
-        y={yDesktop}
+        iconStyle={iconStyle}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
-          x={xModal}
-          y={yModal}
+          modalStyle={modalStyle}
         >
           <ReadingListModal readingList={readingList} />
         </ModalBig>

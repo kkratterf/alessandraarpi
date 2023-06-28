@@ -28,12 +28,9 @@ const ProjectsDesktop = ({ projects }: ProjectsDesktopProps) => {
   const title = 'projects';
   const extension = '.fol';
   const extensionProject = '.pro';
-  const xDesktop = 400;
-  const yDesktop = 70;
-  const xModal = 500;
-  const yModal = 50;
-  const xSubModal = 600;
-  const ySubModal = 200;
+  const iconStyle = 'icon-style-global';
+  const modalStyle = 'modal-style-global ml-80';
+  const subModalStyle = 'submodal-style-global ml-80';
 
   const [isSubOpen, setIsSubOpen] = useState(false);
   function closeSubModal() {
@@ -50,16 +47,14 @@ const ProjectsDesktop = ({ projects }: ProjectsDesktopProps) => {
         openFunction={openModal}
         title={title}
         extension={extension}
-        x={xDesktop}
-        y={yDesktop}
+        iconStyle={iconStyle}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
-          x={xModal}
-          y={yModal}
+          modalStyle={modalStyle}
         >
           <ProjectsModal projects={projects} openFunction={openSubModal} />
         </ModalBig>
@@ -69,8 +64,7 @@ const ProjectsDesktop = ({ projects }: ProjectsDesktopProps) => {
           closeFunction={closeSubModal}
           title={selectedProject.title}
           extension={extensionProject}
-          x={xSubModal}
-          y={ySubModal}
+          subModalStyle={subModalStyle}
         >
           <ProjectModal
             id={selectedProject._id}

@@ -2,38 +2,27 @@
 
 // Import core
 // Import third parts
-import Draggable, { DraggableEvent } from 'react-draggable';
+import { motion } from 'framer-motion';
 // Import customs
 
 interface IconDesktopProps {
   openFunction: () => void;
   title: string,
   extension: string,
-  x: number,
-  y: number,
+  iconStyle: string,
 }
 
-function IconDesktop({ openFunction, title, extension, x, y }: IconDesktopProps) {
-  const eventLogger = (e: DraggableEvent, data: any) => {
-    console.log('Event: ', e);
-    console.log('Data: ', data);
-  };
+function IconDesktop({ openFunction, title, extension, iconStyle }: IconDesktopProps) {
 
   return (
-    <Draggable
-      axis="both"
-      handle=".handle"
-      defaultPosition={{ x, y }}
-      grid={[1, 1]}
-      scale={1}
-      onStart={eventLogger}
-      onDrag={eventLogger}
-      onStop={eventLogger}
+    <motion.div
+      drag
+      dragElastic={0.1}
+      dragMomentum={false}
+      onDoubleClick={openFunction}
+      className={iconStyle}
     >
-      <div
-        onDoubleClick={openFunction}
-        className="group fixed cursor-grab handle grid w-36 justify-items-center"
-      >
+      <div className="group cursor-grab grid w-36 justify-items-center">
         <div className="bg-green group-hover:bg-green-dark1 relative h-20 w-16 rounded-md rounded-tr-[32px] border border-cream group-hover:ring-4 group-hover:ring-red-dark1 mb-2">
           <p className="text-xl font-bold absolute bottom-0.5 left-1.5 select-none cursor-grab">
             {extension}
@@ -45,7 +34,7 @@ function IconDesktop({ openFunction, title, extension, x, y }: IconDesktopProps)
           </p>
         </div>
       </div>
-    </Draggable>
+    </motion.div>
   );
 }
 

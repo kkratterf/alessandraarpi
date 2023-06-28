@@ -18,10 +18,8 @@ const ContactDesktop = () => {
   }
   const title = 'contact';
   const extension = '.txt';
-  const xDesktop = 40;
-  const yDesktop = 10;
-  const xModal = 300;
-  const yModal = 100;
+  const iconStyle = 'icon-style-global';
+  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
@@ -29,16 +27,14 @@ const ContactDesktop = () => {
         openFunction={openModal}
         title={title}
         extension={extension}
-        x={xDesktop}
-        y={yDesktop}
+        iconStyle={iconStyle}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
           title={title}
           extension={extension}
-          x={xModal}
-          y={yModal}
+          modalStyle={modalStyle}
         >
           <ContactModal />
         </ModalBig>
