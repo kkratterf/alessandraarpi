@@ -5,40 +5,40 @@
 @layer base {
 
   body {
-    @apply bg-red dark:bg-cream transition duration-500;
+    @apply bg-cream;
     scroll-behavior: smooth;
   }
 
   h1 {
-    @apply text-black dark:text-red transition duration-500 cursor-default;
+    @apply text-black cursor-default;
   }
 
   h2 {
-    @apply text-cream dark:text-red transition duration-500 cursor-default;
+    @apply text-black cursor-default;
   }
 
   h3 {
-    @apply text-cream dark:text-red transition duration-500 cursor-default;
+    @apply text-black cursor-default;
   }
 
   h4 {
-    @apply text-cream dark:text-red transition duration-500 cursor-default;
+    @apply text-black cursor-default;
   }
 
   h5 {
-    @apply text-cream dark:text-red transition duration-500 cursor-default;
+    @apply text-black cursor-default;
   }
 
   h6 {
-    @apply text-cream dark:text-red transition duration-500 cursor-default;
+    @apply text-black cursor-default;
   }
 
   p, blockquote {
-    @apply text-cream dark:text-red transition duration-500 cursor-default;
+    @apply text-black cursor-default;
   }
 
   li {
-    @apply text-cream dark:text-red transition duration-500 cursor-default;
+    @apply text-black cursor-default;
   }
 
 }
@@ -58,52 +58,13 @@
   }
 
   .navitem {
-    @apply cursor-pointer text-sm italic text-left sm:text-right font-medium uppercase sm:opacity-70 sm:hover:opacity-100 text-cream dark:text-red transition duration-500;
+    @apply cursor-pointer text-sm italic text-left sm:text-right font-medium uppercase sm:opacity-70 sm:hover:opacity-100 text-cream dark:text-red transition duration-300;
   }
 
   .contactitem {
-    @apply cursor-pointer text-sm italic font-medium uppercase sm:opacity-70 sm:hover:opacity-100 text-cream dark:text-red transition duration-500;
+    @apply cursor-pointer text-sm italic font-medium uppercase sm:opacity-70 sm:hover:opacity-100 text-cream dark:text-red transition duration-300;
   }
 
-  .background {
-        animation: background-exit 9s ease-in-out;
-        -webkit-animation: background-exit 9s ease-in-out;
-}
-
-    @keyframes background-exit {
-        0%   {
-            opacity: 1;
-            transform: translate(0, 0);
-            -webkit-transform: translate(0, 0);
-            -moz-transform: translate(0, 0);
-            -ms-transform: translate(0, 0);
-            -o-transform: translate(0, 0);
-}
-        90% {
-            opacity: 1;
-            transform: translate(0, 0);
-            -webkit-transform: translate(0, 0);
-            -moz-transform: translate(0, 0);
-            -ms-transform: translate(0, 0);
-            -o-transform: translate(0, 0); 
-}
-        99% {
-          opacity: 1;
-          transform: translate(0, -100vh);
-          -webkit-transform: translate(0, -100vh);
-          -moz-transform: translate(0, -100vh);
-          -ms-transform: translate(0, -100vh);
-          -o-transform: translate(0, -100vh);
-}
-        100% {
-          opacity: 0;
-          transform: translate(0, -100vh);
-          -webkit-transform: translate(0, -100vh);
-          -moz-transform: translate(0, -100vh);
-          -ms-transform: translate(0, -100vh);
-          -o-transform: translate(0, -100vh);
-}
-    }
 
     .safari_fix {
       -webkit-mask-image: -webkit-radial-gradient(white, black);

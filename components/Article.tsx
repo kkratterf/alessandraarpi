@@ -22,10 +22,10 @@ function Article({ category, title, image, body }: ArticleProps) {
 
   return (
     <motion.section
-      initial={{ y: 50, opacity: 0 }}
+      initial={{ y: 40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 2, delay: 1 }}
-      className="relative pt-[40vh] sm:pt-[60vh] z-40"
+      transition={{ duration: 1.2, delay: 0 }}
+      className="relative z-40"
     >
       <article>
         <section className="space-y-6 sm:space-y-10">
@@ -44,19 +44,8 @@ function Article({ category, title, image, body }: ArticleProps) {
             />
           </div>
         </section>
-
         <section className="mt-20 sm:mt-40">
           <PortableText value={body} components={RichTextComponents} />
-        </section>
-        <section>
-          <h4 className="text-2xl sm:text-4xl mt-20">
-            <Link
-              href="/project-archive"
-              className="underline underline-offset-8 cursor-pointer sm:opacity-70 sm:hover:opacity-100 transition duration-500"
-            >
-              Back to Archive
-            </Link>
-          </h4>
         </section>
       </article>
     </motion.section>

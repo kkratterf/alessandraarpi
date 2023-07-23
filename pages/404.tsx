@@ -13,7 +13,7 @@ export default function Custom404() {
               <h3 className="text-6xl sm:text-9xl font-bold">404 //</h3>
               <h4 className="text-2xl sm:text-4xl font-medium">
                 The page you were looking for was moved or doesn`t exist,
-                <span className="ml-1 sm:ml-2 underline underline-offset-8 cursor-pointer sm:opacity-70 sm:hover:opacity-100 transition duration-500">
+                <span className="ml-1 sm:ml-2 underline underline-offset-8 cursor-pointer sm:opacity-70 sm:hover:opacity-100 transition duration-300">
                   <Link href="/">back to the homepage</Link>
                 </span>
               </h4>

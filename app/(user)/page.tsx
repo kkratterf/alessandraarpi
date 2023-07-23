@@ -16,6 +16,8 @@ import MemoDesktop from '../../components/Desktop/Memo';
 import NewsletterDesktop from '../../components/Desktop/Newsletter';
 import ProjectsDesktop from '../../components/Desktop/Projects';
 import ShoppingListDesktop from '../../components/Desktop/ShoppingList';
+import AboutMobile from '../../components/Mobile/About';
+import ProjectsMobile from '../../components/Mobile/Projects';
 
 export const revalidate = 6000;
 
@@ -56,28 +58,36 @@ const query_shoppingList = groq`
 `;
 
 export default async function HomePage() {
-
   const readingList = await client.fetch(query_readingList);
   const toReadList = await client.fetch(query_toReadList);
   const musicList = await client.fetch(query_musicList);
   const photos = await client.fetch(query_photos);
   const projects = await client.fetch(query_projects);
   const shoppingList = await client.fetch(query_shoppingList);
-  
+
   return (
-    <div className="overscroll-none">
-      <AboutDesktop />
-      <ContactDesktop />
-      <CookiesDesktop />
-      <FooterDesktop />
-      <MemoDesktop />
-      <NewsletterDesktop />
-      <ReadingListDesktop readingList={readingList} />
-      <ToReadListDesktop toReadList={toReadList} />
-      <ShoppingListDesktop shoppingList={shoppingList} />
-      <MusicListDesktop musicList={musicList} />
-      <PhotosDesktop photos={photos} />
-      <ProjectsDesktop projects={projects} />
-    </div>
+    <>
+      <div className="overscroll-none hidden md:flex">
+        <AboutDesktop />
+        <ContactDesktop />
+        <CookiesDesktop />
+        <FooterDesktop />
+        <MemoDesktop />
+        <NewsletterDesktop />
+        <ReadingListDesktop readingList={readingList} />
+        <ToReadListDesktop toReadList={toReadList} />
+        <ShoppingListDesktop shoppingList={shoppingList} />
+        <MusicListDesktop musicList={musicList} />
+        <PhotosDesktop photos={photos} />
+        <ProjectsDesktop projects={projects} />
+      </div>
+      <div className="grid grid-cols-2 md:hidden">
+        <AboutMobile />
+        <ProjectsMobile />
+        <AboutMobile />
+        <AboutMobile />
+        <AboutMobile />
+      </div>
+    </>
   );
 }

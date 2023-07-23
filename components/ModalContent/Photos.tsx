@@ -3,6 +3,7 @@
 // Import core
 // Import third parts
 import NextImage from 'next/image';
+import { motion } from 'framer-motion';
 // Import customs
 import { Photos } from '../../typings';
 import urlFor from '../../lib/urlFor';
@@ -17,25 +18,51 @@ function PhotosModal({ photos, openFunction }: PhotosModalProps) {
     openFunction(selectedPhoto);
   };
 
+  const container = {
+    show: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: {
+      opacity: 0,
+      y: 40,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1.1,
+      },
+    },
+  };
+
   return (
-    <div className="text-xl grid grid-cols-4 gap-3 cursor-default overflow-y-scroll m-4 text-black">
+    <motion.div
+      className="text-xl grid grid-cols-4 gap-3 cursor-default overflow-y-scroll m-4 text-black"
+      variants={container}
+      initial="hidden"
+      animate="show"
+    >
       {photos.map((photo) => (
-        <>
-          <div
+          <motion.div
+            variants={item}
             onDoubleClick={() => handlePhotoClick(photo)}
             key={photo._id}
             className="relative w-full aspect-w-1 h-56 rounded-md overflow-hidden safari_fix cursor-pointer"
           >
             <NextImage
-              className="object-center object-cover hover:scale-105 transition duration-500 rounded-md"
+              className="object-center object-cover hover:scale-105 transition duration-300 rounded-md"
               src={urlFor(photo.mainImage).url()}
               alt={photo.title}
               fill
             />
-          </div>
-        </>
+          </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 }
 

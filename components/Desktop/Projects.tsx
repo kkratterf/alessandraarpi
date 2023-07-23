@@ -8,7 +8,7 @@ import { Projects } from '../../typings';
 import IconDesktop from '../IconDesktop';
 import ModalBig from '../ModalStructure/ModalBig';
 import ProjectsModal from '../ModalContent/Projects';
-import ModalSmall from '../ModalStructure/ModalSmall';
+import ModalExtraLarge from '../ModalStructure/ModalExtraLarge';
 import ProjectModal from '../ModalContent/Project';
 
 type ProjectsDesktopProps = {
@@ -60,7 +60,7 @@ const ProjectsDesktop = ({ projects }: ProjectsDesktopProps) => {
         </ModalBig>
       )}
       {isSubOpen && selectedProject && (
-        <ModalSmall
+        <ModalExtraLarge
           closeFunction={closeSubModal}
           title={selectedProject.title}
           extension={extensionProject}
@@ -73,7 +73,7 @@ const ProjectsDesktop = ({ projects }: ProjectsDesktopProps) => {
             category={selectedProject.category}
             body={selectedProject.body}
           />
-        </ModalSmall>
+        </ModalExtraLarge>
       )}
     </>
   );

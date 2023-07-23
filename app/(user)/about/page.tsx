@@ -1,10 +1,11 @@
+"use client"
+
 // Import core
 // Import third parts
 import { motion } from 'framer-motion';
 // Import customs
 
-function AboutModal() {
-
+function AboutPage() {
   return (
     <motion.section
       initial={{ y: 40, opacity: 0 }}
@@ -12,7 +13,7 @@ function AboutModal() {
       transition={{ duration: 1.2, delay: 0 }}
       className="relative z-40"
     >
-      <div className="text-2xl cursor-default overflow-y-scroll h-56 font-bold m-4 text-black">
+      <div className="text-2xl cursor-default font-bold m-4 text-black">
         Sono Alessandra Arpi e di lavoro faccio parlare aziende, professionisti
         e istituzioni come delle persone e non come delle pubblicità anni ’80.
         Mi fanno paura i luoghi comuni e le frasi che non vogliono dire niente,
@@ -34,4 +35,4 @@ function AboutModal() {
   );
 }
 
-export default AboutModal;
+export default AboutPage;

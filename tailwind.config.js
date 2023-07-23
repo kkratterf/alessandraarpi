@@ -13,7 +13,8 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       black: {
-        DEFAULT: '#3D3838',
+        DEFAULT: '#57534D',
+        light1: '#79756F',
       },
       white: {
         DEFAULT: '#FFFFFF',
@@ -23,6 +24,7 @@ module.exports = {
         dark1: '#ECDAC5',
         dark2: '#D2BAA0',
         dark3: '#B69A79',
+        light1: '#ECDAC5',
       },
       red: {
         DEFAULT: '#CE564B',

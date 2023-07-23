@@ -21,9 +21,9 @@ function ModalSmall({ children, closeFunction, title, extension, subModalStyle }
       dragMomentum={false}
       className={subModalStyle}
     >
-      <div className="absolute cursor-grab select-none z-50 bg-white border-black w-96 overflow-hidden border rounded-xl">
-        <div className="handle flex justify-stretch w-full border-black border-b p-4 pb-3">
-          <p className="text-black w-full cursor-grab select-none">
+      <div className="absolute cursor-grab select-none z-50 bg-white border-cream-dark1 w-96 overflow-hidden border rounded-xl">
+        <div className="handle flex justify-stretch w-full border-cream-dark1 border-b p-4 pb-3">
+          <p className="text-black-light1 w-full cursor-grab select-none">
             {title}
             {extension}
           </p>

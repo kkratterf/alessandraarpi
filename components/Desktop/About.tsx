@@ -9,7 +9,7 @@ import ModalBig from '../ModalStructure/ModalBig';
 import AboutModal from '../ModalContent/About';
 
 const AboutDesktop = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   function closeModal() {
     setIsOpen(false);
   }
@@ -18,8 +18,8 @@ const AboutDesktop = () => {
   }
   const title = 'ciao, inizia da qui';
   const extension = '.txt';
-  const iconStyle = 'icon-style-global ml-80';
-  const modalStyle = 'modal-style-global ml-80';
+  const iconStyle = 'icon-style-global sm:ml-4 md:ml-20 lg:ml-80';
+  const modalStyle = 'modal-style-global ml-80 ';
 
   return (
     <>

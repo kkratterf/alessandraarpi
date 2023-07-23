@@ -81,7 +81,7 @@ export const RichTextComponents = {
         <Link
           href={value.href}
           rel={rel}
-          className="text-brand dark:text-azure transition duration-500 text-base sm:text-xl font-medium mb-4 underline underline-offset-8 opacity-70 hover:opacity-100"
+          className="text-brand dark:text-azure transition duration-300 text-base sm:text-xl font-medium mb-4 underline underline-offset-8 opacity-70 hover:opacity-100"
         >
           {children}
         </Link>

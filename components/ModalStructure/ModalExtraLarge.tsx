@@ -1,28 +1,27 @@
-
 // Import core
 // Import third parts
 import { motion } from 'framer-motion';
 // Import customs
 import CloseButton from '../CloseButton';
 
-interface ModalBigProps {
+interface ModalExtraLargeProps {
   children: React.ReactNode;
   closeFunction: () => void;
   title: string;
   extension: string;
-  modalStyle: string;
+  subModalStyle: string;
 }
 
-function ModalBig({ children, closeFunction, title, extension, modalStyle, }: ModalBigProps) {
-
+function ModalExtraLarge({ children, closeFunction, title, extension, subModalStyle }: ModalExtraLargeProps) {
+  
   return (
     <motion.div
       drag
       dragElastic={0.1}
       dragMomentum={false}
-      className={modalStyle}
+      className={subModalStyle}
     >
-      <div className="absolute cursor-grab select-none z-50 bg-white border-cream-dark1 w-128 overflow-hidden border rounded-xl">
+      <div className="absolute cursor-grab select-none z-50 bg-white border-cream-dark1 w-136 overflow-hidden border rounded-xl">
         <div className="handle flex justify-stretch w-full border-cream-dark1 border-b p-4 pb-3">
           <p className="text-black-light1 w-full cursor-grab select-none">
             {title}
@@ -38,4 +37,4 @@ function ModalBig({ children, closeFunction, title, extension, modalStyle, }: Mo
   );
 }
 
-export default ModalBig;
+export default ModalExtraLarge;

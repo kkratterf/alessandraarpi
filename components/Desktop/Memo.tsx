@@ -19,7 +19,7 @@ const MemoDesktop = () => {
   const title = 'memo';
   const extension = '.txt';
   const iconStyle = 'icon-style-global';
-  const modalStyle = 'modal ml-80';
+  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>

@@ -18,7 +18,7 @@ function PhotoModal({ id, image, title }: PhotoModalProps) {
       <>
         <div
           key={id}
-          className="relative w-full aspect-w-1 h-80 rounded-md overflow-hidden safari_fix cursor-pointer"
+          className="relative w-full aspect-w-1 h-116 rounded-md overflow-hidden safari_fix cursor-pointer"
         >
           <NextImage
             className="object-center object-cover rounded-md"
