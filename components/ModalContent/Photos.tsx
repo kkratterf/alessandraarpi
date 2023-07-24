@@ -50,7 +50,7 @@ function PhotosModal({ photos, openFunction }: PhotosModalProps) {
       {photos.map((photo) => (
           <motion.div
             variants={item}
-            onDoubleClick={() => handlePhotoClick(photo)}
+            onClick={() => handlePhotoClick(photo)}
             key={photo._id}
             className="relative w-full aspect-w-1 h-56 rounded-md overflow-hidden safari_fix cursor-pointer"
           >

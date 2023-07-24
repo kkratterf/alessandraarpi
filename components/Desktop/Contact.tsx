@@ -18,7 +18,7 @@ const ContactDesktop = () => {
   }
   const title = 'contact';
   const extension = '.txt';
-  const iconStyle = 'icon-style-global';
+  const iconStyle = 'icon-style-global lg:ml-64';
   const modalStyle = 'modal-style-global ml-80';
 
   return (

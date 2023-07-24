@@ -46,7 +46,7 @@ const Loader = ({ setLoading }:any) => {
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
-              'All good things takes times',
+              'Oppalà, ci siamo: le cose ganze ci mettono un po’',
               1000, // wait 1s before replacing "Mice" with "Hamsters"
               '',
             ]}

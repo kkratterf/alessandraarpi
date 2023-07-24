@@ -23,7 +23,7 @@ const MusicListDesktop = ({ musicList }: MusicListDesktopProps) => {
   }
   const title = 'musica ora in fissa per scrivere';
   const extension = '.txt';
-  const iconStyle = 'icon-style-global';
+  const iconStyle = 'icon-style-global lg:ml-128';
   const modalStyle = 'modal-style-global ml-80';
 
   return (

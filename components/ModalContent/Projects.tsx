@@ -53,7 +53,7 @@ function ProjectsModal({ projects, openFunction }: ProjectsModalProps) {
           key={project._id}
         >
           <div
-            onDoubleClick={() => handleProjectClick(project)}
+            onClick={() => handleProjectClick(project)}
             key={project._id}
             className="relative w-full aspect-w-1 h-64 rounded-md overflow-hidden safari_fix cursor-pointer"
           >
