@@ -45,7 +45,7 @@ async function ProjectPage({ params: { slug } }: Props) {
 
   return (
     <>
-      <Article category={project.title} title={project.title} image={project.image} body={project.body} />
+      
     </>
   );
 }
