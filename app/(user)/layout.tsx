@@ -18,12 +18,6 @@ export default function RootLayout({
 
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    loading
-      ? document.querySelector('body').classList.add('loading')
-      : document.querySelector('body').classList.remove('loading');
-  }, [loading]);
-
   return (
     <html>
       <body id="top" className="mx-auto h-screen p-4 sm:p-6 overflow-hidden">
