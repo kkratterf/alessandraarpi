@@ -21,7 +21,7 @@ function PhotosModal({ photos, openFunction }: PhotosModalProps) {
   const container = {
     show: {
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.3,
       },
     },
   };
@@ -35,7 +35,7 @@ function PhotosModal({ photos, openFunction }: PhotosModalProps) {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1.1,
+        duration: 1,
       },
     },
   };

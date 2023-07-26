@@ -18,7 +18,7 @@ const CookiesDesktop = () => {
   }
   const title = 'cookies';
   const extension = '.txt';
-  const iconStyle = 'icon-style-global';
+  const iconStyle = 'icon-style-global ml-[10vw] mt-[70vh]';
   const modalStyle = 'modal-style-global ml-80';
 
   return (

@@ -24,7 +24,7 @@ function Article({ category, title, image, body }: ArticleProps) {
     <motion.section
       initial={{ y: 40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1.2, delay: 0 }}
+      transition={{ duration: 1.2, delay: 0.3 }}
       className="relative z-40"
     >
       <article>

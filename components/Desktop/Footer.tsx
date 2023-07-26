@@ -18,7 +18,7 @@ const FooterDesktop = () => {
   }
   const title = 'footer';
   const extension = '.txt';
-  const iconStyle = 'icon-style-global';
+  const iconStyle = 'icon-style-global ml-[80vw] mt-[10vh]';
   const modalStyle = 'modal-style-global ml-80';
 
   return (

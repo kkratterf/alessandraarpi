@@ -28,7 +28,7 @@ const ProjectsDesktop = ({ projects }: ProjectsDesktopProps) => {
   const title = 'projects';
   const extension = '.fol';
   const extensionProject = '.pro';
-  const iconStyle = 'icon-style-global lg:ml-96';
+  const iconStyle = 'icon-style-global ml-[45vw] mt-[55vh]';
   const modalStyle = 'modal-style-global ml-80';
   const subModalStyle = 'submodal-style-global ml-80';
 

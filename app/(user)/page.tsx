@@ -84,9 +84,7 @@ export default async function HomePage() {
       <div className="grid grid-cols-2 md:hidden">
         <AboutMobile />
         <ProjectsMobile />
-        <AboutMobile />
-        <AboutMobile />
-        <AboutMobile />
+        
       </div>
     </>
   );

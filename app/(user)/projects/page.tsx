@@ -11,10 +11,9 @@ import ProjectList from './ProjectList';
 
 export const revalidate = 6000;
 
-const query = groq`
-  *[_type=='project' && visible == true] {
+const query_projects = groq`
+  *[_type=='projects' && visible == true ] {
     ...,
-    category->
   } | order(order asc)
 `;
 
@@ -30,12 +29,12 @@ export default async function LibraryPage() {
           </div>
         }
       >
-        <PreviewProjectList query={query} />
+        <PreviewProjectList query={query_projects} />
       </PreviewSuspense>
     );
   }
 
-  const projects = await client.fetch(query);
+  const projects = await client.fetch(query_projects);
   return (
     <>
       <ProjectList projects={projects} />

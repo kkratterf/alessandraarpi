@@ -28,7 +28,7 @@ const PhotosDesktop = ({ photos }: PhotosDesktopProps) => {
   const title = 'fotine';
   const extension = '.fol';
   const extensionPhoto = '.img';
-  const iconStyle = 'icon-style-global';
+  const iconStyle = 'icon-style-global ml-[80vw] mt-[80vh]';
   const modalStyle = 'modal-style-global ml-80';
   const subModalStyle = 'submodal-style-global ml-80';
 

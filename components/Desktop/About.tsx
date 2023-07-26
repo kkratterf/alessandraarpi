@@ -18,7 +18,7 @@ const AboutDesktop = () => {
   }
   const title = 'ciao, inizia da qui';
   const extension = '.txt';
-  const iconStyle = 'icon-style-global sm:ml-4 md:ml-20 lg:ml-80';
+  const iconStyle = 'icon-style-global ml-[25vw] mt-[30vh]';
   const modalStyle = 'modal-style-global ml-80 ';
 
   return (

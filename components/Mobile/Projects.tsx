@@ -15,8 +15,8 @@ const ProjectsMobile = () => {
   function openModal() {
     setIsOpen(true);
   }
-  const title = 'ciao, inizia da qui';
-  const extension = '.txt';
+  const title = 'projects';
+  const extension = '.fol';
 
 
   return (

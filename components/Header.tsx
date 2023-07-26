@@ -1,6 +1,7 @@
 'use client';
 
 // Import core
+import Link from 'next/link';
 // Import third parts
 import { motion } from 'framer-motion';
 // Import customs
@@ -13,11 +14,13 @@ function Header() {
       transition={{ duration: 2, delay: 1 }}
       className="relative"
     >
-      <nav className="bg-transparent z-0">
-        <h1 className="text-3xl text-red bg-transparent font-bold cursor-default select-none">
-          alessandra arpi
-        </h1>
-      </nav>
+      <Link href="/" className="cursor-pointer">
+        <nav className="bg-transparent z-0 cursor-pointer">
+          <h1 className="text-3xl text-red bg-transparent font-bold select-none cursor-pointer">
+            alessandra arpi
+          </h1>
+        </nav>
+      </Link>
     </motion.section>
   );
 }

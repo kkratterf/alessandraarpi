@@ -16,7 +16,7 @@ export const revalidate = 6000;
 
 export async function generateStaticParams() {
   const query = groq`
-  *[_type=='project']
+  *[_type=='projects']
   {
     slug
   }
@@ -32,7 +32,7 @@ export async function generateStaticParams() {
 
 async function ProjectPage({ params: { slug } }: Props) {
   const query = groq`
-    *[_type=='project' && slug.current == $slug][0]
+    *[_type=='projects' && slug.current == $slug][0]
     {
         ...,
         client->,
@@ -41,11 +41,11 @@ async function ProjectPage({ params: { slug } }: Props) {
     }
   `;
 
-  const project: Projects = await client.fetch(query, { slug });
+  const projects: Projects = await client.fetch(query, { slug });
 
   return (
     <>
-      
+      <Article category={projects.category} title={projects.title} image={projects.mainImage} body={projects.body} />
     </>
   );
 }

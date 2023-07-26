@@ -45,13 +45,13 @@ const Loader = ({ setLoading }:any) => {
         <p className="text-center mx-auto text-3xl text-cream leading-normal space-y-4 z-40 !cursor-progress">
           <TypeAnimation
             sequence={[
-              // Same substring at the start will only be typed out once, initially
-              'Oppalà, ci siamo: le cose ganze ci mettono un po’',
-              1000, // wait 1s before replacing "Mice" with "Hamsters"
-              '',
+              'Oppalà, ci siamo:',
+              1000,
+              'le cose ganze ci mettono un po’',
+              1000,
             ]}
             wrapper="span"
-            speed={2}
+            speed={1}
             style={{ fontSize: '1em', display: 'inline-block' }}
           />
         </p>
