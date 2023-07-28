@@ -15,7 +15,6 @@ import FooterDesktop from '../../components/Desktop/Footer';
 import MemoDesktop from '../../components/Desktop/Memo';
 import NewsletterDesktop from '../../components/Desktop/Newsletter';
 import ProjectsDesktop from '../../components/Desktop/Projects';
-import ShoppingListDesktop from '../../components/Desktop/ShoppingList';
 import AboutMobile from '../../components/Mobile/About';
 import ProjectsMobile from '../../components/Mobile/Projects';
 
@@ -51,19 +50,12 @@ const query_projects = groq`
   } | order(order asc)
 `;
 
-const query_shoppingList = groq`
-  *[_type=='shoppingList' && visible == true ] {
-    ...,
-  } | order(_createdAt asc)
-`;
-
 export default async function HomePage() {
   const readingList = await client.fetch(query_readingList);
   const toReadList = await client.fetch(query_toReadList);
   const musicList = await client.fetch(query_musicList);
   const photos = await client.fetch(query_photos);
   const projects = await client.fetch(query_projects);
-  const shoppingList = await client.fetch(query_shoppingList);
 
   return (
     <>
@@ -76,7 +68,6 @@ export default async function HomePage() {
         <NewsletterDesktop />
         <ReadingListDesktop readingList={readingList} />
         <ToReadListDesktop toReadList={toReadList} />
-        <ShoppingListDesktop shoppingList={shoppingList} />
         <MusicListDesktop musicList={musicList} />
         <PhotosDesktop photos={photos} />
         <ProjectsDesktop projects={projects} />
@@ -84,7 +75,6 @@ export default async function HomePage() {
       <div className="grid grid-cols-2 md:hidden">
         <AboutMobile />
         <ProjectsMobile />
-        
       </div>
     </>
   );

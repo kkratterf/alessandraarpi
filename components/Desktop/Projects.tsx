@@ -10,6 +10,15 @@ import ModalBig from '../ModalStructure/ModalBig';
 import ProjectsModal from '../ModalContent/Projects';
 import ModalExtraLarge from '../ModalStructure/ModalExtraLarge';
 import ProjectModal from '../ModalContent/Project';
+import { delay_9 } from '../../lib/delayConstants';
+import {
+  title_projects,
+  extension_projects,
+  iconStyle_projects,
+  modalStyle_projects,
+  extensionProject_projects,
+  subModalStyle_projects,
+} from '../../lib/fileConstants';
 
 type ProjectsDesktopProps = {
   projects: Projects[];
@@ -25,12 +34,6 @@ const ProjectsDesktop = ({ projects }: ProjectsDesktopProps) => {
   function openModal() {
     setIsOpen(true);
   }
-  const title = 'projects';
-  const extension = '.fol';
-  const extensionProject = '.pro';
-  const iconStyle = 'icon-style-global ml-[45vw] mt-[55vh]';
-  const modalStyle = 'modal-style-global ml-80';
-  const subModalStyle = 'submodal-style-global ml-80';
 
   const [isSubOpen, setIsSubOpen] = useState(false);
   function closeSubModal() {
@@ -45,16 +48,17 @@ const ProjectsDesktop = ({ projects }: ProjectsDesktopProps) => {
     <>
       <IconDesktop
         openFunction={openModal}
-        title={title}
-        extension={extension}
-        iconStyle={iconStyle}
+        title={title_projects}
+        extension={extension_projects}
+        iconStyle={iconStyle_projects}
+        delay={delay_9}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
-          title={title}
-          extension={extension}
-          modalStyle={modalStyle}
+          title={title_projects}
+          extension={extension_projects}
+          modalStyle={modalStyle_projects}
         >
           <ProjectsModal projects={projects} openFunction={openSubModal} />
         </ModalBig>
@@ -63,8 +67,8 @@ const ProjectsDesktop = ({ projects }: ProjectsDesktopProps) => {
         <ModalExtraLarge
           closeFunction={closeSubModal}
           title={selectedProject.title}
-          extension={extensionProject}
-          subModalStyle={subModalStyle}
+          extension={extensionProject_projects}
+          subModalStyle={subModalStyle_projects}
         >
           <ProjectModal
             id={selectedProject._id}

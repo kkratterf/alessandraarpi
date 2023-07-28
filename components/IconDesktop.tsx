@@ -10,6 +10,7 @@ interface IconDesktopProps {
   title: string,
   extension: string,
   iconStyle: string,
+  delay: number,
 }
 
 function IconDesktop({
@@ -17,13 +18,13 @@ function IconDesktop({
   title,
   extension,
   iconStyle,
+  delay,
 }: IconDesktopProps) {
   return (
     <motion.section
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 2, delay: 1 }}
-      className="relative"
+      transition={{ duration: 2, delay }}
     >
       <motion.div
         drag

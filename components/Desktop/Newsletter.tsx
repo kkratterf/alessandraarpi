@@ -7,6 +7,13 @@ import { useState } from 'react';
 import IconDesktop from '../IconDesktop';
 import ModalBig from '../ModalStructure/ModalBig';
 import NewsletterModal from '../ModalContent/Newsletter';
+import { delay_7 } from '../../lib/delayConstants';
+import {
+  title_newsletter,
+  extension_newsletter,
+  iconStyle_newsletter,
+  modalStyle_newsletter,
+} from '../../lib/fileConstants';
 
 const NewsletterDesktop = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,25 +23,22 @@ const NewsletterDesktop = () => {
   function openModal() {
     setIsOpen(true);
   }
-  const title = 'newsletter';
-  const extension = '.txt';
-  const iconStyle = 'icon-style-global';
-  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
       <IconDesktop
         openFunction={openModal}
-        title={title}
-        extension={extension}
-        iconStyle={iconStyle}
+        title={title_newsletter}
+        extension={extension_newsletter}
+        iconStyle={iconStyle_newsletter}
+        delay={delay_7}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
-          title={title}
-          extension={extension}
-          modalStyle={modalStyle}
+          title={title_newsletter}
+          extension={extension_newsletter}
+          modalStyle={modalStyle_newsletter}
         >
           <NewsletterModal />
         </ModalBig>

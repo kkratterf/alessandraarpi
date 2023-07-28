@@ -8,6 +8,13 @@ import { MusicList } from '../../typings';
 import IconDesktop from '../IconDesktop';
 import ModalBig from '../ModalStructure/ModalBig';
 import MusicModal from '../ModalContent/Music';
+import { delay_6 } from '../../lib/delayConstants';
+import {
+  title_music,
+  extension_music,
+  iconStyle_music,
+  modalStyle_music,
+} from '../../lib/fileConstants';
 
 type MusicListDesktopProps = {
   musicList: MusicList[];
@@ -21,25 +28,22 @@ const MusicListDesktop = ({ musicList }: MusicListDesktopProps) => {
   function openModal() {
     setIsOpen(true);
   }
-  const title = 'musica ora in fissa per scrivere';
-  const extension = '.txt';
-  const iconStyle = 'icon-style-global ml-[35vw] mt-[80vh]';
-  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
       <IconDesktop
         openFunction={openModal}
-        title={title}
-        extension={extension}
-        iconStyle={iconStyle}
+        title={title_music}
+        extension={extension_music}
+        iconStyle={iconStyle_music}
+        delay={delay_6}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
-          title={title}
-          extension={extension}
-          modalStyle={modalStyle}
+          title={title_music}
+          extension={extension_music}
+          modalStyle={modalStyle_music}
         >
           <MusicModal musicList={musicList} />
         </ModalBig>

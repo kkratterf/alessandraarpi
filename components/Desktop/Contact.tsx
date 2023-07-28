@@ -7,6 +7,14 @@ import { useState } from 'react';
 import IconDesktop from '../IconDesktop';
 import ModalBig from '../ModalStructure/ModalBig';
 import ContactModal from '../ModalContent/Contact';
+import { delay_2 } from '../../lib/delayConstants';
+import {
+  title_contact,
+  extension_contact,
+  iconStyle_contact,
+  modalStyle_contact,
+} from '../../lib/fileConstants';
+
 
 const ContactDesktop = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,25 +24,22 @@ const ContactDesktop = () => {
   function openModal() {
     setIsOpen(true);
   }
-  const title = 'contact';
-  const extension = '.txt';
-  const iconStyle = 'icon-style-global ml-[40vw] mt-[25vh]';
-  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
       <IconDesktop
         openFunction={openModal}
-        title={title}
-        extension={extension}
-        iconStyle={iconStyle}
+        title={title_contact}
+        extension={extension_contact}
+        iconStyle={iconStyle_contact}
+        delay={delay_2}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
-          title={title}
-          extension={extension}
-          modalStyle={modalStyle}
+          title={title_contact}
+          extension={extension_contact}
+          modalStyle={modalStyle_contact}
         >
           <ContactModal />
         </ModalBig>

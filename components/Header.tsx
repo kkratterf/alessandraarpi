@@ -11,7 +11,7 @@ function Header() {
     <motion.section
       initial={{ y: -25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 2, delay: 1 }}
+      transition={{ duration: 1.6, delay: 0.8 }}
       className="relative"
     >
       <Link href="/" className="cursor-pointer">

@@ -10,6 +10,15 @@ import ModalBig from '../ModalStructure/ModalBig';
 import PhotosModal from '../ModalContent/Photos';
 import ModalSmall from '../ModalStructure/ModalSmall';
 import PhotoModal from '../ModalContent/Photo';
+import { delay_8 } from '../../lib/delayConstants';
+import {
+  title_photos,
+  extension_photos,
+  iconStyle_photos,
+  modalStyle_photos,
+  extensionPhoto_photos,
+  subModalStyle_photos,
+} from '../../lib/fileConstants';
 
 type PhotosDesktopProps = {
   photos: Photos[];
@@ -25,12 +34,6 @@ const PhotosDesktop = ({ photos }: PhotosDesktopProps) => {
   function openModal() {
     setIsOpen(true);
   }
-  const title = 'fotine';
-  const extension = '.fol';
-  const extensionPhoto = '.img';
-  const iconStyle = 'icon-style-global ml-[80vw] mt-[80vh]';
-  const modalStyle = 'modal-style-global ml-80';
-  const subModalStyle = 'submodal-style-global ml-80';
 
   const [isSubOpen, setIsSubOpen] = useState(false);
   function closeSubModal() {
@@ -45,16 +48,17 @@ const PhotosDesktop = ({ photos }: PhotosDesktopProps) => {
     <>
       <IconDesktop
         openFunction={openModal}
-        title={title}
-        extension={extension}
-        iconStyle={iconStyle}
+        title={title_photos}
+        extension={extension_photos}
+        iconStyle={iconStyle_photos}
+        delay={delay_8}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
-          title={title}
-          extension={extension}
-          modalStyle={modalStyle}
+          title={title_photos}
+          extension={extension_photos}
+          modalStyle={modalStyle_photos}
         >
           <PhotosModal photos={photos} openFunction={openSubModal} />
         </ModalBig>
@@ -63,8 +67,8 @@ const PhotosDesktop = ({ photos }: PhotosDesktopProps) => {
         <ModalSmall
           closeFunction={closeSubModal}
           title={selectedPhoto.title}
-          extension={extensionPhoto}
-          subModalStyle={subModalStyle}
+          extension={extensionPhoto_photos}
+          subModalStyle={subModalStyle_photos}
         >
           <PhotoModal
             id={selectedPhoto._id}

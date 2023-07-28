@@ -7,6 +7,14 @@ import { useState } from 'react';
 import IconDesktop from '../IconDesktop';
 import ModalBig from '../ModalStructure/ModalBig';
 import CookiesModal from '../ModalContent/Cookies';
+import { delay_3 } from '../../lib/delayConstants';
+import {
+  title_cookies,
+  extension_cookies,
+  iconStyle_cookies,
+  modalStyle_cookies,
+} from '../../lib/fileConstants';
+
 
 const CookiesDesktop = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,25 +24,22 @@ const CookiesDesktop = () => {
   function openModal() {
     setIsOpen(true);
   }
-  const title = 'cookies';
-  const extension = '.txt';
-  const iconStyle = 'icon-style-global ml-[10vw] mt-[70vh]';
-  const modalStyle = 'modal-style-global ml-80';
 
   return (
     <>
       <IconDesktop
         openFunction={openModal}
-        title={title}
-        extension={extension}
-        iconStyle={iconStyle}
+        title={title_cookies}
+        extension={extension_cookies}
+        iconStyle={iconStyle_cookies}
+        delay={delay_3}
       />
       {isOpen && (
         <ModalBig
           closeFunction={closeModal}
-          title={title}
-          extension={extension}
-          modalStyle={modalStyle}
+          title={title_cookies}
+          extension={extension_cookies}
+          modalStyle={modalStyle_cookies}
         >
           <CookiesModal />
         </ModalBig>

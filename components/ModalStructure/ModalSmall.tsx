@@ -16,11 +16,12 @@ function ModalSmall({ children, closeFunction, title, extension, subModalStyle }
   
   return (
     <motion.section
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
+      initial={{ x: 0, y: 20, opacity: 0, scale: 0.95 }}
+      animate={{ x: -20, y: 0, opacity: 1, scale: 1 }}
       transition={{ ease: easeOut, duration: 0.3 }}
-      exit={{ opacity: 0, scale: 0.95 }}
-      className="relative z-50"
+      exit={{ x: 0, y: 20, opacity: 0, scale: 0.95 }}
+      style={{ transformOrigin: 'right center' }}
+      className="z-50"
     >
       <motion.div
         drag
