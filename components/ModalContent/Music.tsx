@@ -19,13 +19,13 @@ const container = {
 const item = {
   hidden: {
     opacity: 0,
-    y: 40,
+    y: 25,
   },
   show: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1.1,
+      duration: 1.2,
     },
   },
 };

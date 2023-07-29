@@ -5,7 +5,6 @@
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 import { PortableText } from "@portabletext/react";
-import { motion } from "framer-motion";
 // Import customs
 import { RichTextComponents } from "../components/RichTextComponents";
 import urlFor from '../lib/urlFor';
@@ -21,12 +20,6 @@ type ArticleProps = {
 function Article({ category, title, image, body }: ArticleProps) {
 
   return (
-    <motion.section
-      initial={{ y: 40, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1.2, delay: 0.3 }}
-      className="relative z-40"
-    >
       <article>
         <section className="space-y-6 sm:space-y-10">
           <div className="space-y-3 sm:space-y-4">
@@ -48,7 +41,6 @@ function Article({ category, title, image, body }: ArticleProps) {
           <PortableText value={body} components={RichTextComponents} />
         </section>
       </article>
-    </motion.section>
   );
 }
 

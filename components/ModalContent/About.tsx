@@ -7,9 +7,9 @@ function AboutModal() {
 
   return (
     <motion.section
-      initial={{ y: 40, opacity: 0 }}
+      initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0, delay: 0 }}
+      transition={{ duration: 1.2, delay: 0.4 }}
       className="relative z-40"
     >
       <div className="text-2xl cursor-default overflow-y-scroll h-96 font-bold m-4 text-black">
