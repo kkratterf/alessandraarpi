@@ -7,13 +7,12 @@ import { useState } from 'react';
 import IconDesktop from '../IconDesktop';
 import ModalBig from '../ModalStructure/ModalBig';
 import NewsletterModal from '../ModalContent/Newsletter';
-import { delay_7 } from '../../lib/delayConstants';
-import {
-  title_newsletter,
-  extension_newsletter,
-  iconStyle_newsletter,
-  modalStyle_newsletter,
-} from '../../lib/fileConstants';
+import { delay_3 } from '../../lib/delayConstants';
+
+const title_newsletter = 'newsletter';
+const extension_newsletter = '.new';
+const iconStyle_newsletter = 'icon-style-global ml-[25vw] mt-[22vh]';
+const modalStyle_newsletter = 'modal-style-global ml-[16vw] mt-[10vh]';
 
 const NewsletterDesktop = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +30,7 @@ const NewsletterDesktop = () => {
         title={title_newsletter}
         extension={extension_newsletter}
         iconStyle={iconStyle_newsletter}
-        delay={delay_7}
+        delay={delay_3}
       />
       {isOpen && (
         <ModalBig

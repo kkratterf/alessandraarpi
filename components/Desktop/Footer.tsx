@@ -7,13 +7,12 @@ import { useState } from 'react';
 import IconDesktop from '../IconDesktop';
 import ModalBig from '../ModalStructure/ModalBig';
 import FooterModal from '../ModalContent/Footer';
-import { delay_4 } from '../../lib/delayConstants';
-import {
-  title_footer,
-  extension_footer,
-  iconStyle_footer,
-  modalStyle_footer,
-} from '../../lib/fileConstants';
+import { delay_3 } from '../../lib/delayConstants';
+
+const title_footer = 'footer';
+const extension_footer = '.txt';
+const iconStyle_footer = 'icon-style-global ml-[70vw] mt-[70vh]';
+const modalStyle_footer = 'modal-style-global ml-[50vw] mt-[52vh]';
 
 const FooterDesktop = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +30,7 @@ const FooterDesktop = () => {
         title={title_footer}
         extension={extension_footer}
         iconStyle={iconStyle_footer}
-        delay={delay_4}
+        delay={delay_3}
       />
       {isOpen && (
         <ModalBig

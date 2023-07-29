@@ -8,13 +8,12 @@ import { ToReadList } from '../../typings';
 import IconDesktop from '../IconDesktop';
 import ModalBig from '../ModalStructure/ModalBig';
 import ToReadListModal from '../ModalContent/ToReadList';
-import { delay_11 } from '../../lib/delayConstants';
-import {
-  title_toReadList,
-  extension_toReadList,
-  iconStyle_toReadList,
-  modalStyle_toReadList,
-} from '../../lib/fileConstants';
+import { delay_4 } from '../../lib/delayConstants';
+
+const title_toReadList = 'leggerò';
+const extension_toReadList = '.txt';
+const iconStyle_toReadList = 'icon-style-global ml-[36vw] mt-[5vh]';
+const modalStyle_toReadList = 'modal-style-global ml-[22vw] mt-[2vh]';
 
 type ToReadListDesktopProps = {
   toReadList: ToReadList[];
@@ -36,7 +35,7 @@ const ToReadListDesktop = ({ toReadList }: ToReadListDesktopProps) => {
         title={title_toReadList}
         extension={extension_toReadList}
         iconStyle={iconStyle_toReadList}
-        delay={delay_11}
+        delay={delay_4}
       />
       {isOpen && (
         <ModalBig

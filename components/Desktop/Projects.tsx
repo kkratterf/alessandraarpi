@@ -10,15 +10,14 @@ import ModalBig from '../ModalStructure/ModalBig';
 import ProjectsModal from '../ModalContent/Projects';
 import ModalExtraLarge from '../ModalStructure/ModalExtraLarge';
 import ProjectModal from '../ModalContent/Project';
-import { delay_9 } from '../../lib/delayConstants';
-import {
-  title_projects,
-  extension_projects,
-  iconStyle_projects,
-  modalStyle_projects,
-  extensionProject_projects,
-  subModalStyle_projects,
-} from '../../lib/fileConstants';
+import { delay_2 } from '../../lib/delayConstants';
+
+const title_projects = 'portfolio';
+const extension_projects = '.omg';
+const extensionProject_projects = '.pro';
+const iconStyle_projects = 'icon-style-global ml-[30vw] mt-[50vh]';
+const modalStyle_projects = 'modal-style-global ml-[15vw] mt-[5vh]';
+const subModalStyle_projects = 'submodal-style-global ml-[25vw] mt-[1vh]';
 
 type ProjectsDesktopProps = {
   projects: Projects[];
@@ -51,7 +50,7 @@ const ProjectsDesktop = ({ projects }: ProjectsDesktopProps) => {
         title={title_projects}
         extension={extension_projects}
         iconStyle={iconStyle_projects}
-        delay={delay_9}
+        delay={delay_2}
       />
       {isOpen && (
         <ModalBig

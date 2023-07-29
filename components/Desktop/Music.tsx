@@ -8,13 +8,12 @@ import { MusicList } from '../../typings';
 import IconDesktop from '../IconDesktop';
 import ModalBig from '../ModalStructure/ModalBig';
 import MusicModal from '../ModalContent/Music';
-import { delay_6 } from '../../lib/delayConstants';
-import {
-  title_music,
-  extension_music,
-  iconStyle_music,
-  modalStyle_music,
-} from '../../lib/fileConstants';
+import { delay_3 } from '../../lib/delayConstants';
+
+const title_music = 'musica in loop';
+const extension_music = '.omg';
+const iconStyle_music = 'icon-style-global ml-[15vw] mt-[68vh]';
+const modalStyle_music = 'modal-style-global ml-[5vw] mt-[28vh]';
 
 type MusicListDesktopProps = {
   musicList: MusicList[];
@@ -36,7 +35,7 @@ const MusicListDesktop = ({ musicList }: MusicListDesktopProps) => {
         title={title_music}
         extension={extension_music}
         iconStyle={iconStyle_music}
-        delay={delay_6}
+        delay={delay_3}
       />
       {isOpen && (
         <ModalBig

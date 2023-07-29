@@ -24,7 +24,7 @@ function IconDesktop({
     <motion.section
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 2, delay }}
+      transition={{ duration: 1.6, delay }}
     >
       <motion.div
         drag

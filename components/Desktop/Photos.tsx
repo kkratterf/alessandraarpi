@@ -10,15 +10,14 @@ import ModalBig from '../ModalStructure/ModalBig';
 import PhotosModal from '../ModalContent/Photos';
 import ModalSmall from '../ModalStructure/ModalSmall';
 import PhotoModal from '../ModalContent/Photo';
-import { delay_8 } from '../../lib/delayConstants';
-import {
-  title_photos,
-  extension_photos,
-  iconStyle_photos,
-  modalStyle_photos,
-  extensionPhoto_photos,
-  subModalStyle_photos,
-} from '../../lib/fileConstants';
+import { delay_4 } from '../../lib/delayConstants';
+
+const title_photos = 'foto_Ale';
+const extension_photos = '.omg';
+const extensionPhoto_photos = '.img';
+const iconStyle_photos = 'icon-style-global ml-[55vw] mt-[60vh]';
+const modalStyle_photos = 'modal-style-global ml-[40vw] mt-[45vh]';
+const subModalStyle_photos = 'submodal-style-global ml-[65vw] mt-[30vh]';
 
 type PhotosDesktopProps = {
   photos: Photos[];
@@ -51,7 +50,7 @@ const PhotosDesktop = ({ photos }: PhotosDesktopProps) => {
         title={title_photos}
         extension={extension_photos}
         iconStyle={iconStyle_photos}
-        delay={delay_8}
+        delay={delay_4}
       />
       {isOpen && (
         <ModalBig

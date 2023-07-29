@@ -7,7 +7,7 @@ import { useState } from 'react';
 import IconDesktop from '../IconDesktop';
 import ModalBig from '../ModalStructure/ModalBig';
 import AboutModal from '../ModalContent/About';
-import { delay_1 } from '../../lib/delayConstants';
+import { delay_2 } from '../../lib/delayConstants';
 
 const AboutDesktop = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +20,8 @@ const AboutDesktop = () => {
 
   const title_about = 'chi sono_def';
   const extension_about = '.txt';
-  const iconStyle_about = 'icon-style-global ml-[45vw] mt-[30vh]';
-  const modalStyle_about = 'modal-style-global ml-[27vw] mt-[20vh]';
+  const iconStyle_about = 'icon-style-global ml-[45vw] mt-[35vh]';
+  const modalStyle_about = 'modal-style-global ml-[27vw] mt-[22vh]';
 
   return (
     <>
@@ -30,7 +30,7 @@ const AboutDesktop = () => {
         title={title_about}
         extension={extension_about}
         iconStyle={iconStyle_about}
-        delay={delay_1}
+        delay={delay_2}
       />
       {isOpen && (
         <ModalBig

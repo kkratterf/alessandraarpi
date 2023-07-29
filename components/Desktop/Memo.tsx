@@ -7,13 +7,12 @@ import { useState } from 'react';
 import IconDesktop from '../IconDesktop';
 import ModalBig from '../ModalStructure/ModalBig';
 import MemoModal from '../ModalContent/Memo';
-import { delay_5 } from '../../lib/delayConstants';
-import {
-  title_memo,
-  extension_memo,
-  iconStyle_memo,
-  modalStyle_memo,
-} from '../../lib/fileConstants';
+import { delay_2 } from '../../lib/delayConstants';
+
+const title_memo = 'appunti a caso';
+const extension_memo = '.txt';
+const iconStyle_memo = 'icon-style-global ml-[10vw] mt-[14vh]';
+const modalStyle_memo = 'modal-style-global ml-[2vw] mt-[7vh]';
 
 const MemoDesktop = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +30,7 @@ const MemoDesktop = () => {
         title={title_memo}
         extension={extension_memo}
         iconStyle={iconStyle_memo}
-        delay={delay_5}
+        delay={delay_2}
       />
       {isOpen && (
         <ModalBig

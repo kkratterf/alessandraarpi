@@ -8,13 +8,12 @@ import { ReadingList } from '../../typings';
 import IconDesktop from '../IconDesktop';
 import ModalBig from '../ModalStructure/ModalBig';
 import ReadingListModal from '../ModalContent/ReadingList';
-import { delay_10 } from '../../lib/delayConstants';
-import {
-  title_readingList,
-  extension_readingList,
-  iconStyle_readingList,
-  modalStyle_readingList,
-} from '../../lib/fileConstants';
+import { delay_4 } from '../../lib/delayConstants';
+
+const title_readingList = 'sto leggendo';
+const extension_readingList = '.txt';
+const iconStyle_readingList = 'icon-style-global ml-[5vw] mt-[42vh]';
+const modalStyle_readingList = 'modal-style-global ml-[2vw] mt-[35vh]';
 
 type ReadingListDesktopProps = {
   readingList: ReadingList[];
@@ -36,7 +35,7 @@ const ReadingListDesktop = ({ readingList }: ReadingListDesktopProps) => {
         title={title_readingList}
         extension={extension_readingList}
         iconStyle={iconStyle_readingList}
-        delay={delay_10}
+        delay={delay_4}
       />
       {isOpen && (
         <ModalBig
