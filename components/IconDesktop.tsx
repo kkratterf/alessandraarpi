@@ -34,13 +34,13 @@ function IconDesktop({
         className={iconStyle}
       >
         <div className="group cursor-grab grid w-36 justify-items-center">
-          <div className="bg-red relative h-20 w-16 rounded-md rounded-tr-[32px] group-hover:ring-4 group-hover:ring-red-dark2 mb-2 transition duration-300">
+          <div className="bg-red relative h-20 w-16 rounded-md rounded-tr-[32px] group-hover:ring-4 group-hover:ring-red-dark2 mb-2 transition duration-500">
             <p className="text-cream text-xl font-bold absolute bottom-0 left-1.5 select-none cursor-grab">
               {extension}
             </p>
           </div>
-          <div className="group-hover:bg-cream-light1 rounded-md transition duration-300">
-            <p className="text-center text-sm pt-1 px-1.5 pb-0 select-none cursor-grab transition duration-300">
+          <div className="group-hover:bg-cream-dark1 rounded-md transition duration-500">
+            <p className="text-center text-sm pt-1 px-1.5 pb-0 select-none cursor-grab transition duration-500">
               {title}
             </p>
           </div>

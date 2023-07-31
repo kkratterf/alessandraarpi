@@ -31,7 +31,7 @@ function ModalExtraLarge({ children, closeFunction, title, extension, subModalSt
       >
         <div className="absolute cursor-grab select-none z-50 bg-white border-cream-dark1 w-136 overflow-hidden border rounded-xl">
           <div className="handle flex justify-stretch w-full border-cream-dark1 border-b p-4 pb-3">
-            <p className="text-black-light1 w-full cursor-grab select-none">
+            <p className="text-cream-dark3 w-full cursor-grab select-none">
               {title}
               {extension}
             </p>

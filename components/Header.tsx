@@ -16,7 +16,7 @@ function Header() {
     >
       <Link href="/" className="cursor-pointer">
         <nav className="bg-transparent z-0 cursor-pointer">
-          <h1 className="text-3xl text-red bg-transparent font-bold select-none cursor-pointer">
+          <h1 className="text-4xl text-cream-dark1 bg-transparent font-bold select-none cursor-pointer">
             alessandra arpi
           </h1>
         </nav>
