@@ -6,7 +6,7 @@ import { useState } from 'react';
 // Import customs
 import { Projects } from '../../typings';
 import IconDesktop from '../IconDesktop';
-import ModalBig from '../ModalStructure/ModalBig';
+import ModalExtraBig from '../ModalStructure/ModalExtraBig';
 import ProjectsModal from '../ModalContent/Projects';
 import ModalExtraLarge from '../ModalStructure/ModalExtraLarge';
 import ProjectModal from '../ModalContent/Project';
@@ -53,14 +53,14 @@ const ProjectsDesktop = ({ projects }: ProjectsDesktopProps) => {
         delay={delay_2}
       />
       {isOpen && (
-        <ModalBig
+        <ModalExtraBig
           closeFunction={closeModal}
           title={title_projects}
           extension={extension_projects}
           modalStyle={modalStyle_projects}
         >
           <ProjectsModal projects={projects} openFunction={openSubModal} />
-        </ModalBig>
+        </ModalExtraBig>
       )}
       {isSubOpen && selectedProject && (
         <ModalExtraLarge

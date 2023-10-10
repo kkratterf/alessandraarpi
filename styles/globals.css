@@ -10,35 +10,35 @@
   }
 
   h1 {
-    @apply text-red-dark2 cursor-default;
+    @apply text-black cursor-default;
   }
 
   h2 {
-    @apply text-red-dark2 cursor-default;
+    @apply text-black cursor-default;
   }
 
   h3 {
-    @apply text-red-dark2 cursor-default;
+    @apply text-black cursor-default;
   }
 
   h4 {
-    @apply text-red-dark2 cursor-default;
+    @apply text-black cursor-default;
   }
 
   h5 {
-    @apply text-red-dark2 cursor-default;
+    @apply text-black cursor-default;
   }
 
   h6 {
-    @apply text-red-dark2 cursor-default;
+    @apply text-black cursor-default;
   }
 
   p, blockquote {
-    @apply text-red-dark2 cursor-default;
+    @apply text-black cursor-default;
   }
 
   li {
-    @apply text-red-dark2 cursor-default;
+    @apply text-black cursor-default;
   }
 
 }

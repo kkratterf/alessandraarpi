@@ -18,7 +18,7 @@ function ModalSmall({ children, closeFunction, title, extension, subModalStyle }
     <motion.section
       initial={{ x: 0, y: 20, opacity: 0, scale: 0.95 }}
       animate={{ x: -60, y: 0, opacity: 1, scale: 1 }}
-      transition={{ ease: easeOut, duration: 0.3 }}
+      transition={{ ease: easeOut, duration: 0.4 }}
       exit={{ x: 0, y: 20, opacity: 0, scale: 0.95 }}
       style={{ transformOrigin: 'right center' }}
       className="z-50"
@@ -29,9 +29,9 @@ function ModalSmall({ children, closeFunction, title, extension, subModalStyle }
         dragMomentum={false}
         className={subModalStyle}
       >
-        <div className="absolute cursor-grab select-none z-50 bg-white border-cream-dark1 w-96 overflow-hidden border rounded-xl">
-          <div className="handle flex justify-stretch w-full border-cream-dark1 border-b p-4 pb-3">
-            <p className="text-cream-dark3 w-full cursor-grab select-none">
+        <div className="absolute cursor-grab select-none z-50 bg-white border-black-light1 w-96 overflow-hidden border rounded-xl">
+          <div className="handle flex justify-stretch w-full border-black-light1 border-b p-4 pb-3">
+            <p className="text-black-light1 w-full cursor-grab select-none">
               {title}
               {extension}
             </p>

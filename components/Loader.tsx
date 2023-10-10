@@ -41,15 +41,16 @@ const Loader = ({ setLoading }:any) => {
       className="relative z-50"
     >
       <div className="flex items-center fixed top-0 left-0 bg-red cursor-wait select-none w-full h-full z-50">
-        <p className="text-center mx-auto text-4xl text-cream leading-normal space-y-4 z-40 !cursor-progress">
+        <p className="text-center mx-auto text-3xl text-cream leading-normal space-y-4 z-40 !cursor-progress">
           <TypeAnimation
             sequence={[
               '',
-              1500,
-              'Oppalà',
-              1500,
-              'lo stacchetto mentre si carica il sito',
-              1500,
+              1200,
+              'Sto scrivendo…',
+              1200,
+              'Arrivo eh...',
+              1200,
+              '',
             ]}
             wrapper="span"
             speed={1}

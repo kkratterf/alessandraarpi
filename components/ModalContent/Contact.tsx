@@ -1,23 +1,39 @@
 // Import core
 // Import third parts
-import { motion } from 'framer-motion';
 // Import customs
 
 function ContactModal() {
   return (
-    <motion.section
-      initial={{ y: 25, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1.2, delay: 0.4 }}
-      className="relative z-40"
-    >
-      <div className="text-2xl cursor-default overflow-y-scroll h-56 font-bold m-4 text-black">
-        Il modo più veloce per scrivermi è mandarmi una mail:
-        alessandra.arpi@gmail.com Cerco di rispondere a tutte entro 48 ore - mi
-        ci impegno. Se vuoi sbirciare meglio come comunico, il posto più
-        aggiornato è Instagram: mi trovi come @irrequieta_
+    <div className="relative z-40 text-lg cursor-default overflow-y-scroll max-h-[50vh] space-y-6 p-6 text-black">
+      <div className="space-y-3">
+        <p>Il modo più veloce per scrivermi è mandarmi una mail:</p>
+        <a
+          href="mailto:alessandra.arpi@gmail.com?subject=Say Una mail al volo!"
+          className="underline underline-offset-2 text-red"
+        >
+          alessandra.arpi@gmail.com
+        </a>
       </div>
-    </motion.section>
+      <p>
+        Cerco di rispondere a tutte entro 48 ore - mi ci impegno.
+      </p>
+      <div className="space-y-3">
+        <p>
+          Se vuoi sbirciare meglio come comunico, il posto più aggiornato è Instagram:
+        </p>
+        <p>
+          Mi trovi come
+          <a
+            href="https://www.instagram.com/irrequieta_/"
+            target="_blank"
+            rel="noreferrer"
+            className="underline underline-offset-2 text-red pl-2"
+          >
+            @irrequieta_
+          </a>
+        </p>
+      </div>
+    </div>
   );
 }
 

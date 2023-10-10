@@ -17,6 +17,7 @@ import NewsletterDesktop from '../../components/Desktop/Newsletter';
 import ProjectsDesktop from '../../components/Desktop/Projects';
 import AboutMobile from '../../components/Mobile/About';
 import ProjectsMobile from '../../components/Mobile/Projects';
+import IntroDesktop from '../../components/Desktop/Intro';
 
 export const revalidate = 6000;
 
@@ -60,6 +61,7 @@ export default async function HomePage() {
   return (
     <>
       <div className="overscroll-none hidden md:flex">
+        <IntroDesktop />
         <AboutDesktop />
         <ContactDesktop />
         <CookiesDesktop />

@@ -3,7 +3,6 @@
 // Import core
 // Import third parts
 import NextImage from 'next/image';
-import { motion } from "framer-motion";
 // Import customs
 import { Projects } from '../../typings';
 import urlFor from '../../lib/urlFor';
@@ -18,41 +17,10 @@ function ProjectsModal({ projects, openFunction }: ProjectsModalProps) {
     openFunction(selectedProject);
   };
 
-  const container = {
-    show: {
-      transition: {
-        staggerChildren: 0.1,
-        delay: 0.4,
-      },
-    },
-  };
-
-  const item = {
-    hidden: {
-      opacity: 0,
-      y: 25,
-    },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1.2,
-      },
-    },
-  }
-
   return (
-    <motion.div
-      className="text-xl grid grid-cols-3 gap-3 cursor-default overflow-y-scroll m-4 text-black"
-      variants={container}
-      initial="hidden"
-      animate="show"
-    >
+    <div className="text-xl grid grid-cols-3 gap-3 cursor-default overflow-y-scroll p-6 text-black">
       {projects.map((project) => (
-        <motion.div
-          variants={item}
-          key={project._id}
-        >
+        <div key={project._id} className="hover:cursor-pointer">
           <div
             onClick={() => handleProjectClick(project)}
             key={project._id}
@@ -65,13 +33,17 @@ function ProjectsModal({ projects, openFunction }: ProjectsModalProps) {
               fill
             />
           </div>
-          <div className="grid mx-2 mt-3 mb-4 space-y-1">
-            <h5 className="text-black text-xl font-bold">{project.title}</h5>
-            <p className="text-black text-sm">{project.category}</p>
+          <div className="grid mx-2 mt-4 mb-4 space-y-2">
+            <h5 className="text-black text-xl font-bold hover:cursor-pointer">
+              {project.title}
+            </h5>
+            <p className="text-black-light1 text-sm hover:cursor-pointer">
+              {project.category}
+            </p>
           </div>
-        </motion.div>
+        </div>
       ))}
-    </motion.div>
+    </div>
   );
 }
 

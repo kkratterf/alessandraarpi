@@ -21,7 +21,7 @@ const AboutDesktop = () => {
   const title_about = 'chi sono_def';
   const extension_about = '.txt';
   const iconStyle_about = 'icon-style-global ml-[45vw] mt-[35vh]';
-  const modalStyle_about = 'modal-style-global ml-[27vw] mt-[22vh]';
+  const modalStyle_about = 'modal-style-global ml-[27vw] mt-[4vh]';
 
   return (
     <>

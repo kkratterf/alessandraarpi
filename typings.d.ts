@@ -43,13 +43,6 @@ interface MusicList extends Base {
   visible: boolean;
 }
 
-interface ShoppingList extends Base {
-  title: string;
-  slug: Slug;
-  visible: boolean;
-  strike: boolean;
-}
-
 interface Photos extends Base {
   title: string;
   slug: Slug;
