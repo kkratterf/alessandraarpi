@@ -74,7 +74,9 @@ export default async function HomePage() {
         <PhotosDesktop photos={photos} />
         <ProjectsDesktop projects={projects} />
       </div>
-      <div className="grid grid-cols-2 md:hidden">
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:hidden">
+        <AboutMobile />
+        <ProjectsMobile />
         <AboutMobile />
         <ProjectsMobile />
       </div>

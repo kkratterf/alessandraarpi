@@ -4,7 +4,7 @@
 import { useState } from 'react';
 // Import third parts
 // Import customs
-import ModalBig from '../ModalStructure/ModalBig';
+import ModalIntro from '../ModalStructure/ModalIntro';
 import IntroModal from '../ModalContent/Intro';
 
 const IntroDesktop = () => {
@@ -20,14 +20,14 @@ const IntroDesktop = () => {
   return (
     <>
       {isOpen && (
-        <ModalBig
+        <ModalIntro
           closeFunction={closeModal}
           title={title_about}
           extension={extension_about}
           modalStyle={modalStyle_about}
         >
           <IntroModal />
-        </ModalBig>
+        </ModalIntro>
       )}
     </>
   );
