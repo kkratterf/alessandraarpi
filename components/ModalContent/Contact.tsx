@@ -15,11 +15,13 @@ function ContactModal() {
         </a>
       </div>
       <p>
-        Cerco di rispondere a tutte entro 48 ore - mi ci impegno.
+        Cerco di rispondere a tutte entro
+        <span className="font-bold">48 ore</span> - mi ci impegno.
       </p>
       <div className="space-y-3">
         <p>
-          Se vuoi sbirciare meglio come comunico, il posto più aggiornato è Instagram:
+          Se vuoi sbirciare meglio come comunico, il posto più aggiornato è
+          <span className="font-bold"> Instagram</span>:
         </p>
         <p>
           Mi trovi come
