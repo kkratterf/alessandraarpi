@@ -49,19 +49,19 @@ function PhotosModal({ photos, openFunction }: PhotosModalProps) {
       animate="show"
     >
       {photos.map((photo) => (
-          <motion.div
-            variants={item}
-            onClick={() => handlePhotoClick(photo)}
-            key={photo._id}
-            className="relative w-full aspect-w-1 h-56 rounded-md overflow-hidden safari_fix cursor-pointer"
-          >
-            <NextImage
-              className="object-center object-cover hover:scale-105 transition duration-300 rounded-md"
-              src={urlFor(photo.mainImage).url()}
-              alt={photo.title}
-              fill
-            />
-          </motion.div>
+        <motion.div
+          variants={item}
+          onClick={() => handlePhotoClick(photo)}
+          key={photo._id}
+          className="relative w-full aspect-[3/4] rounded-md overflow-hidden safari_fix cursor-pointer"
+        >
+          <NextImage
+            className="object-center object-cover hover:scale-105 transition duration-300 rounded-md"
+            src={urlFor(photo.mainImage).url()}
+            alt={photo.title}
+            fill
+          />
+        </motion.div>
       ))}
     </motion.div>
   );

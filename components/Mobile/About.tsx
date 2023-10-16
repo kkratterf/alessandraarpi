@@ -21,7 +21,7 @@ const AboutMobile = () => {
 
   return (
     <ClientSideRoute
-      route="/about"
+      route="/chi-sono"
     >
       <IconDesktopMobile
         openFunction={openModal}

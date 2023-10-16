@@ -21,7 +21,7 @@ const ProjectsMobile = () => {
 
   return (
     <ClientSideRoute
-      route="/projects"
+      route="/portfolio"
     >
       <IconDesktopMobile
         openFunction={openModal}

@@ -30,7 +30,7 @@ function ModalBig({ children, closeFunction, title, extension, modalStyle, }: Mo
         dragMomentum={false}
         className={modalStyle}
       >
-        <div className="absolute cursor-grab select-none z-50 bg-white border-black-light1 w-128 overflow-hidden border rounded-xl">
+        <div className="absolute cursor-grab select-none z-50 bg-white border-black-light1 md:w-[60vw] lg:w-[50vw] overflow-hidden border rounded-xl">
           <div className="handle flex justify-stretch w-full border-black-light1 border-b p-4 pb-3">
             <p className="text-black-light1 w-full cursor-grab select-none">
               {title}

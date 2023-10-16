@@ -1,6 +1,7 @@
 'use client'; 
 
 // Import core
+import { useEffect } from 'react';
 // Import third parts
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
@@ -30,6 +31,16 @@ const load = {
 
 
 const Loader = ({ setLoading }:any) => {
+  useEffect(() => {
+    // Nascondi il loader dopo che l'animazione è stata completata
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 12000); // Imposta il timeout in base alle tue esigenze
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [setLoading]);
 
   return (
     <motion.section

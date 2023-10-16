@@ -6,8 +6,9 @@ function AboutModal() {
   return (
     <div className="relative z-40 text-lg cursor-default overflow-y-scroll h-[70vh] p-6 space-y-4 text-black">
       <p>
-        Sono Alessandra Arpi e di lavoro faccio parlare aziende, professionisty
-        e istituzioni come persone.
+        Sono <span className="font-bold">Alessandra Arpi</span> e di lavoro <span className="font-bold">
+          faccio parlare aziende, professionisty e istituzioni come persone.
+        </span>
       </p>
       <div className="space-y-2">
         <p>
@@ -15,10 +16,13 @@ function AboutModal() {
           rileggo:
         </p>
         <p>
-          1. Questa cosa è chiara per chiunque, è concreta? <br />
+          1. Questa cosa è <span className="font-bold">chiara per chiunque</span>
+          , è concreta?
+          <br />
         </p>
         <p>
-          2. Questa cosa crea un ponte con chi legge? <br />
+          2. Questa cosa{' '}
+          <span className="font-bold">crea un ponte con chi legge</span>? <br />
         </p>
         <p>Se manca un “sì” nelle risposte: via, da capo.</p>
       </div>
@@ -26,12 +30,14 @@ function AboutModal() {
         Mi fanno paura i luoghi comuni e le frasi che non vogliono dire niente,
         il burocratese, la scrittura oscura che nasconde, tutto ciò che esclude,
         le comunicazioni pubbliche passivo-aggressive. Faccio questo mestiere
-        per semplificare la vita a chi legge, ma pure per far sentire le persone
-        comprese. Cerco quella scintilla che lega gli immaginari, tiro fuori la
-        meraviglia dalle informazioni che paiono banali, penso tanto a come si
-        sente chi riceve un messaggio. Tifo per i testi seri ma non seriosi e ho
-        fede nell’autorevolezza del concreto e non del patinato // chiudiamo
-        insieme l’era delle parole vuote come “leader di settore”, dai.
+        per <span className="font-bold">semplificare la vita a chi legge</span>,
+        ma pure per far sentire le persone comprese. Cerco quella scintilla che
+        lega gli immaginari, tiro fuori la meraviglia dalle informazioni che
+        paiono banali, penso tanto a come si sente chi riceve un messaggio.{' '}
+        <span className="font-bold">Tifo per i testi seri ma non seriosi</span>{' '}
+        e ho fede nell’autorevolezza del concreto e non del patinato //
+        chiudiamo insieme l’era delle parole vuote come “leader di settore”,
+        dai.
       </p>
       <p>
         Cerco (forse disperatamente?) di far capire quanto il linguaggio dia
