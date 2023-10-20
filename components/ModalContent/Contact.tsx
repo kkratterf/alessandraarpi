@@ -4,7 +4,7 @@
 
 function ContactModal() {
   return (
-    <div className="relative z-40 text-lg cursor-default overflow-y-scroll max-h-[50vh] space-y-6 p-6 text-black">
+    <div className="relative z-40 text-lg cursor-default overflow-y-scroll max-h-[50vh] space-y-5 p-6 text-black">
       <div className="space-y-3">
         <p>Il modo più veloce per scrivermi è mandarmi una mail:</p>
         <a
@@ -15,16 +15,15 @@ function ContactModal() {
         </a>
       </div>
       <p>
-        Cerco di rispondere a tutte entro
-        <span className="font-bold">48 ore</span> - mi ci impegno.
+        Cerco di rispondere a tutte entro <b>48 ore</b> - mi ci impegno.
       </p>
       <div className="space-y-3">
         <p>
-          Se vuoi sbirciare meglio come comunico, il posto più aggiornato è
-          <span className="font-bold"> Instagram</span>:
+          Se vuoi sbirciare le mie innumerevoli stories o mandarmi un meme, vola
+          su <b> Instagram</b>:
         </p>
         <p>
-          Mi trovi come
+          mi trovi come
           <a
             href="https://www.instagram.com/irrequieta_/"
             target="_blank"
@@ -33,6 +32,20 @@ function ContactModal() {
           >
             @irrequieta_
           </a>
+        </p>
+      </div>
+      <div className="space-y-3">
+        <p>
+          Oppure puoi farti un giro su
+          <a
+            href="https://www.linkedin.com/in/alessandra-arpi/"
+            target="_blank"
+            rel="noreferrer"
+            className="underline underline-offset-2 text-red pl-2"
+          >
+            Linkedin
+          </a>
+          , che non adoro ma sì, serve
         </p>
       </div>
     </div>

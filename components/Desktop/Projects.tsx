@@ -16,8 +16,8 @@ const title_projects = 'portfolio';
 const extension_projects = '.omg';
 const extensionProject_projects = '.pro';
 const iconStyle_projects = 'icon-style-global ml-[30vw] mt-[50vh]';
-const modalStyle_projects = 'modal-style-global ml-[15vw] mt-[5vh]';
-const subModalStyle_projects = 'submodal-style-global ml-[25vw] mt-[1vh]';
+const modalStyle_projects = 'modal-style-global ml-[10vw] mt-[5vh]';
+const subModalStyle_projects = 'submodal-style-global ml-[15vw] mt-[1vh]';
 
 type ProjectsDesktopProps = {
   projects: Projects[];

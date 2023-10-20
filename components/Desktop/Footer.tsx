@@ -12,7 +12,7 @@ import { delay_3 } from '../../lib/delayConstants';
 const title_footer = 'footer';
 const extension_footer = '.txt';
 const iconStyle_footer = 'icon-style-global ml-[70vw] mt-[70vh]';
-const modalStyle_footer = 'modal-style-global ml-[50vw] mt-[52vh]';
+const modalStyle_footer = 'modal-style-global ml-[45vw] mt-[52vh]';
 
 const FooterDesktop = () => {
   const [isOpen, setIsOpen] = useState(false);

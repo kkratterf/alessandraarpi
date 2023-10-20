@@ -12,7 +12,7 @@ import { delay_4 } from '../../lib/delayConstants';
 const title_cookies = 'biscotti & privacy';
 const extension_cookies = '.txt';
 const iconStyle_cookies = 'icon-style-global ml-[75vw] mt-[30vh]';
-const modalStyle_cookies = 'modal-style-global ml-[55vw] mt-[15vh]';
+const modalStyle_cookies = 'modal-style-global ml-[40vw] mt-[15vh]';
 
 const CookiesDesktop = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -12,7 +12,7 @@ import { delay_2 } from '../../lib/delayConstants';
 const title_memo = 'appunti a caso';
 const extension_memo = '.txt';
 const iconStyle_memo = 'icon-style-global ml-[10vw] mt-[14vh]';
-const modalStyle_memo = 'modal-style-global ml-[2vw] mt-[7vh]';
+const modalStyle_memo = 'modal-style-global ml-[5vw] mt-[7vh]';
 
 const MemoDesktop = () => {
   const [isOpen, setIsOpen] = useState(false);

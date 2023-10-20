@@ -29,7 +29,7 @@ function ModalExtraLarge({ children, closeFunction, title, extension, subModalSt
         dragMomentum={false}
         className={subModalStyle}
       >
-        <div className="absolute cursor-grab select-none z-50 bg-white border-black-light1 w-[80vw] overflow-hidden border rounded-xl">
+        <div className="absolute cursor-grab select-none z-50 bg-white border-black-light1 w-[75vw] overflow-hidden border rounded-xl">
           <div className="handle flex justify-stretch w-full border-black-light1 border-b p-4 pb-3">
             <p className="text-black-light1 w-full cursor-grab select-none">
               {title}

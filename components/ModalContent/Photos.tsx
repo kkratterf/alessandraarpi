@@ -18,39 +18,12 @@ function PhotosModal({ photos, openFunction }: PhotosModalProps) {
     openFunction(selectedPhoto);
   };
 
-  const container = {
-    show: {
-      transition: {
-        staggerChildren: 0.2,
-        delay: 0.4,
-      },
-    },
-  };
-
-  const item = {
-    hidden: {
-      opacity: 0,
-      y: 25,
-    },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1.2,
-      },
-    },
-  };
-
   return (
-    <motion.div
+    <div
       className="text-xl grid grid-cols-4 gap-3 cursor-default overflow-y-scroll m-4 text-black"
-      variants={container}
-      initial="hidden"
-      animate="show"
     >
       {photos.map((photo) => (
-        <motion.div
-          variants={item}
+        <div
           onClick={() => handlePhotoClick(photo)}
           key={photo._id}
           className="relative w-full aspect-[3/4] rounded-md overflow-hidden safari_fix cursor-pointer"
@@ -61,9 +34,9 @@ function PhotosModal({ photos, openFunction }: PhotosModalProps) {
             alt={photo.title}
             fill
           />
-        </motion.div>
+        </div>
       ))}
-    </motion.div>
+    </div>
   );
 }
 

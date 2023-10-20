@@ -13,7 +13,7 @@ import { delay_4 } from '../../lib/delayConstants';
 const title_readingList = 'sto leggendo';
 const extension_readingList = '.txt';
 const iconStyle_readingList = 'icon-style-global ml-[5vw] mt-[42vh]';
-const modalStyle_readingList = 'modal-style-global ml-[2vw] mt-[35vh]';
+const modalStyle_readingList = 'modal-style-global ml-[5vw] mt-[35vh]';
 
 type ReadingListDesktopProps = {
   readingList: ReadingList[];

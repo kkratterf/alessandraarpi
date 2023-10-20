@@ -6,7 +6,10 @@ function AboutModal() {
   return (
     <div className="relative z-40 text-lg cursor-default overflow-y-scroll h-[70vh] p-6 space-y-5 text-black">
       <p>
-        Sono <b>Alessandra Arpi</b> e di lavoro <b>faccio parlare aziende, professionisty e istituzioni come persone.</b>
+        Sono <b>Alessandra Arpi</b> e di lavoro{' '}
+        <b>
+          faccio parlare aziende, professionisty e istituzioni come persone.
+        </b>
       </p>
       <div className="space-y-2">
         <p>
@@ -28,20 +31,27 @@ function AboutModal() {
         per <b>semplificare la vita a chi legge</b>, ma pure per far sentire le
         persone comprese. Cerco quella scintilla che lega gli immaginari, tiro
         fuori la meraviglia dalle informazioni che paiono banali, penso tanto a
-        come si sente chi riceve un messaggio. <b>Tifo per i testi seri ma non seriosi</b> e ho fede nell’autorevolezza
+        come si sente chi riceve un messaggio.{' '}
+        <b>Tifo per i testi seri ma non seriosi</b> e ho fede nell’autorevolezza
         del concreto e non del patinato // chiudiamo insieme l’era delle parole
         vuote come “leader di settore”, dai.
       </p>
       <p>
-        Cerco (forse disperatamente?) di far capire quanto <b>il linguaggio dia forma a tutta una società</b>, non solo ai nostri
-        progetti. Lavoro con chi ha voglia di rendere <b>accessibile, onesta, chiara, aperta e umana la sua comunicazione</b>,
+        Cerco (forse disperatamente?) di far capire quanto{' '}
+        <b>il linguaggio dia forma a tutta una società</b>, non solo ai nostri
+        progetti. Lavoro con chi ha voglia di rendere{' '}
+        <b>accessibile, onesta, chiara, aperta e umana la sua comunicazione</b>,
         che poi, spoiler, è anche quella che funziona di più. La comunicazione
         fa cultura e chi lavora con me decide di farla insieme: si prende la
         responsabilità di ciò che dice con voglia e coraggio, ché l’ambito del
         lavoro è quello in cui si può fare parecchio la differenza.
       </p>
       <p>
-        Le parole fanno fare cose o meno e prendere decisioni; possono <b>unire, semplificare processi o complicarli, far perdere tempo, innervosire, allontanare</b>
+        Le parole fanno fare cose o meno e prendere decisioni; possono{' '}
+        <b>
+          unire, semplificare processi o complicarli, far perdere tempo,
+          innervosire, allontanare
+        </b>
         . Il bello è che possiamo scegliere noi, usandole. Credo nel comunicare
         il lavoro come dialogo e nel potere <b>collettivo dei testi</b>, che si
         declinino nell’app di una banca, nel sito di un Centro Antiviolenza o
@@ -61,7 +71,10 @@ function AboutModal() {
         brodo di giuggiole quando ci prende gusto e funziona.
       </p>
       <p>
-        <b>Roba sparsa su di me</b>: il mio desktop è sempre un caos, mi son
+        <h4 className="text-2xl font-bold mt-10 mb-3">
+          Roba sparsa su di me:
+        </h4>
+        Il mio desktop è sempre un caos, mi son
         fatta sei mesi di college negli Stati Uniti come in una serie tv, il mio
         tatuaggio preferito è una <b>giraffa</b> che va in bici con la codina al
         vento, ho messo su un bookclub che si chiama <b>Paginette</b>. Sono una
@@ -71,12 +84,19 @@ function AboutModal() {
         muri, poi però mi sposto ovunque con allegrezza.
       </p>
       <p>
-        C’è un sogno buttato sulla mia scrivania: rendere <b>universale e ampia la comunicazione scritta delle istituzioni pubbliche</b>.
+        C’è un sogno buttato sulla mia scrivania: rendere{' '}
+        <b>
+          universale e ampia la comunicazione scritta delle istituzioni
+          pubbliche
+        </b>
+        .
       </p>
       <div className="space-y-2">
-        <p>Ma riassumiamo cosa faccio, in pratica:</p>
+        <h4 className="text-2xl font-bold mt-10 mb-3">
+          Ma riassumiamo cosa faccio, in pratica:
+        </h4>
         <p>
-          - Produco <b>copy e microcopy</b> accessibili per siti, app, social
+          - Scrivo <b>copy e microcopy</b> accessibili per siti, app, social
           media
         </p>
         <p>
