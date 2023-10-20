@@ -18,7 +18,7 @@ function ProjectsModal({ projects, openFunction }: ProjectsModalProps) {
   };
 
   return (
-    <div className="text-xl grid grid-cols-3 gap-3 cursor-default overflow-y-scroll p-6 text-black">
+    <div className="text-xl grid grid-cols-3 gap-3 cursor-default overflow-y-scroll h-[80vh] p-6 text-black">
       {projects.map((project) => (
         <div key={project._id} className="hover:cursor-pointer">
           <div

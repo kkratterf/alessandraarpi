@@ -15,9 +15,18 @@ import FooterDesktop from '../../components/Desktop/Footer';
 import MemoDesktop from '../../components/Desktop/Memo';
 import NewsletterDesktop from '../../components/Desktop/Newsletter';
 import ProjectsDesktop from '../../components/Desktop/Projects';
+import IntroDesktop from '../../components/Desktop/Intro';
 import AboutMobile from '../../components/Mobile/About';
 import ProjectsMobile from '../../components/Mobile/Projects';
-import IntroDesktop from '../../components/Desktop/Intro';
+import FooterMobile from '../../components/Mobile/Footer';
+import CookiesMobile from '../../components/Mobile/Cookies';
+import ContactMobile from '../../components/Mobile/Contact';
+import NewsletterMobile from '../../components/Mobile/Newsletter';
+import ReadingListMobile from '../../components/Mobile/ReadingList';
+import ToReadListMobile from '../../components/Mobile/ToReadList';
+import MusicMobile from '../../components/Mobile/Music';
+import PhotosMobile from '../../components/Mobile/Photos';
+import MemoMobile from '../../components/Mobile/Memo';
 
 export const revalidate = 6000;
 
@@ -76,26 +85,16 @@ export default async function HomePage() {
       </div>
       <div className="overflow-y-scroll py-20 grid gap-y-10 grid-cols-2 sm:grid-cols-4 justify-items-center md:hidden">
         <AboutMobile />
+        <ContactMobile />
+        <CookiesMobile />
+        <FooterMobile />
+        <MemoMobile />
+        <NewsletterMobile />
+        <ReadingListMobile />
+        <ToReadListMobile />
+        <MusicMobile />
+        <PhotosMobile />
         <ProjectsMobile />
-        <AboutMobile />
-        <ProjectsMobile />
-        <AboutMobile />
-        <AboutMobile />
-        <ProjectsMobile />
-        <AboutMobile />
-        <ProjectsMobile />
-        <AboutMobile />
-        <AboutMobile />
-        <ProjectsMobile />
-        <AboutMobile />
-        <ProjectsMobile />
-        <AboutMobile />
-        <AboutMobile />
-        <AboutMobile />
-        <ProjectsMobile />
-        <AboutMobile />
-        <ProjectsMobile />
-        <AboutMobile />
       </div>
     </>
   );

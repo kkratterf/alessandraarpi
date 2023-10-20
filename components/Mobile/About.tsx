@@ -1,21 +1,14 @@
 'use client';
 
 // Import core
-import { useState } from 'react';
 // Import third parts
 // Import customs
-import IconDesktopMobile from '../IconDesktopMobile';
+import IconMobile from '../IconMobile';
 import ClientSideRoute from '../ClientSideRoute';
 
 const AboutMobile = () => {
-  const [isOpen, setIsOpen] = useState(true);
-  function closeModal() {
-    setIsOpen(false);
-  }
-  function openModal() {
-    setIsOpen(true);
-  }
-  const title = 'ciao, inizia da qui';
+  
+  const title = 'chi sono_def';
   const extension = '.txt';
 
 
@@ -23,8 +16,7 @@ const AboutMobile = () => {
     <ClientSideRoute
       route="/chi-sono"
     >
-      <IconDesktopMobile
-        openFunction={openModal}
+      <IconMobile
         title={title}
         extension={extension}
       />

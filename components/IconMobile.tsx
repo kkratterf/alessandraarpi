@@ -5,16 +5,15 @@
 import { motion } from 'framer-motion';
 // Import customs
 
-interface IconDesktopProps {
-  openFunction: () => void;
+interface IconMobileProps {
   title: string;
   extension: string;
 }
 
-function IconDesktop({
+function IconMobile({
   title,
   extension,
-}: IconDesktopProps) {
+}: IconMobileProps) {
   return (
     <motion.section
       initial={{ y: 25, opacity: 0 }}
@@ -22,14 +21,14 @@ function IconDesktop({
       transition={{ duration: 2, delay: 0 }}
       className="relative"
     >
-      <div className="group cursor-grab grid w-36 justify-items-center">
-        <div className="bg-red relative h-20 w-16 rounded-md rounded-tr-[32px] group-hover:ring-2 group-hover:ring-red-dark2 mb-2 transition duration-500">
+      <div className="grid w-36 justify-items-center">
+        <div className="bg-red relative h-20 w-16 rounded-md rounded-tr-[32px] mb-2">
           <p className="text-cream text-xl font-bold absolute bottom-0 left-1.5 select-none cursor-grab">
             {extension}
           </p>
         </div>
-        <div className="group-hover:bg-cream-light1 rounded-md transition duration-500">
-          <p className="text-center text-sm pt-1 px-1.5 pb-0 select-none cursor-grab transition duration-500">
+        <div>
+          <p className="text-center text-sm pt-1 px-1.5 pb-0 select-none cursor-grab">
             {title}
           </p>
         </div>
@@ -38,4 +37,4 @@ function IconDesktop({
   );
 }
 
-export default IconDesktop;
+export default IconMobile;

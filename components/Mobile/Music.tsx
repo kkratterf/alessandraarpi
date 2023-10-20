@@ -6,15 +6,15 @@
 import IconMobile from '../IconMobile';
 import ClientSideRoute from '../ClientSideRoute';
 
-const ProjectsMobile = () => {
+const MusicMobile = () => {
 
-  const title = 'portfolio';
+  const title = 'musica in loop';
   const extension = '.omg';
 
 
   return (
     <ClientSideRoute
-      route="/portfolio"
+      route="/musica-in-loop"
     >
       <IconMobile
         title={title}
@@ -24,4 +24,4 @@ const ProjectsMobile = () => {
   );
 };
 
-export default ProjectsMobile;
+export default MusicMobile;

@@ -45,16 +45,14 @@ async function ProjectPage({ params: { slug } }: Props) {
 
   return (
     <>
-      
+      <Article
+        category={projects.category}
+        title={projects.title}
+        image={projects.mainImage}
+        body={projects.body}
+      />
     </>
   );
 }
 
 export default ProjectPage;
-
-/* <Article
-  category={projects.category}
-  title={projects.title}
-  image={projects.mainImage}
-  body={projects.body}
-/>; */

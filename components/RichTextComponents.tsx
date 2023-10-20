@@ -51,22 +51,22 @@ export const RichTextComponents = {
       </h4>
     ),
     h5: ({ children }: any) => (
-      <h5 className="text-xl sm:text-2xl font-bold mt-6 sm:mt-10 mb-3 sm:mb-4">
+      <h5 className="text-xl sm:text-2xl font-bold mt-6 sm:mt-10 mb-4 sm:mb-6">
         {children}
       </h5>
     ),
     h6: ({ children }: any) => (
-      <h6 className="text-base sm:text-xl font-bold mt-6 sm:mt-10 mb-3 sm:mb-4">
+      <h6 className="text-base sm:text-xl font-bold mt-6 sm:mt-10 mb-4 sm:mb-4">
         {children}
       </h6>
     ),
     p: ({ children }: any) => (
-      <p className="text-base sm:text-xl font-medium mb-4 md:mb-6 max-w-screen-lg">
+      <p className="text-base sm:text-lg mb-4 md:mb-6 max-w-screen-lg">
         {children}
       </p>
     ),
     blockquote: ({ children }: any) => (
-      <blockquote className="text-base sm:text-xl font-medium mb-4 md:mb-6 max-w-screen-lg italic">
+      <blockquote className="text-base sm:text-lg font-medium mb-4 md:mb-6 max-w-screen-lg italic">
         {children}
       </blockquote>
     ),

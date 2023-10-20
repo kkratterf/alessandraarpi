@@ -2,7 +2,6 @@
 
 // Import core
 // Import third parts
-import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 import { PortableText } from "@portabletext/react";
 // Import customs
@@ -20,15 +19,15 @@ type ArticleProps = {
 function Article({ category, title, image, body }: ArticleProps) {
 
   return (
-      <article>
-        <section className="space-y-6 sm:space-y-10">
+      <article className='my-4'>
+        <section className="space-y-6">
           <div className="space-y-3 sm:space-y-4">
-            <h6 className="text-base sm:text-xl font-medium">
+            <h6 className="text-base sm:text-lg text-black-light1">
               {category}
             </h6>
-            <h1 className="font-bold text-4xl sm:text-6xl">{title}</h1>
+            <h1 className="font-bold text-4xl">{title}</h1>
           </div>
-          <div className="relative w-full h-116 md:h-128 bg-grey-light dark:bg-pop-dark rounded-xl overflow-hidden">
+          <div className="relative w-full h-116 xl:h-128 bg-grey-light dark:bg-pop-dark rounded-xl overflow-hidden">
             <Image
               src={urlFor(image).url()}
               className="object-center object-cover rounded-xl"
@@ -37,7 +36,7 @@ function Article({ category, title, image, body }: ArticleProps) {
             />
           </div>
         </section>
-        <section className="mt-20 sm:mt-40">
+        <section className="mt-16">
           <PortableText value={body} components={RichTextComponents} />
         </section>
       </article>

@@ -6,15 +6,15 @@
 import IconMobile from '../IconMobile';
 import ClientSideRoute from '../ClientSideRoute';
 
-const ProjectsMobile = () => {
+const ReadingListMobile = () => {
 
-  const title = 'portfolio';
-  const extension = '.omg';
+  const title = 'sto leggendo';
+  const extension = '.txt';
 
 
   return (
     <ClientSideRoute
-      route="/portfolio"
+      route="/sto-leggendo"
     >
       <IconMobile
         title={title}
@@ -24,4 +24,4 @@ const ProjectsMobile = () => {
   );
 };
 
-export default ProjectsMobile;
+export default ReadingListMobile;

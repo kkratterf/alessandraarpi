@@ -16,7 +16,7 @@ type ProjectModalProps = {
 
 function ProjectModal({ id, image, title, category, body }: ProjectModalProps) {
   return (
-    <div className="relative z-40 text-xl cursor-default overflow-y-scroll h-[70vh] p-6 text-black">
+    <div className="relative z-40 text-xl cursor-default overflow-y-scroll h-[80vh] p-6 text-black">
       <Article category={category} title={title} image={image} body={body} />
     </div>
   );

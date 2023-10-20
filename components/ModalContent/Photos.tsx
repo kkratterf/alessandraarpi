@@ -3,7 +3,6 @@
 // Import core
 // Import third parts
 import NextImage from 'next/image';
-import { motion } from 'framer-motion';
 // Import customs
 import { Photos } from '../../typings';
 import urlFor from '../../lib/urlFor';
