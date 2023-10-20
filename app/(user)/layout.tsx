@@ -23,15 +23,15 @@ export default function RootLayout({
       <body id="top" className="mx-auto h-screen p-4 sm:p-6">
         <AnimatePresence>
           {loading ? (
-          <motion.div key='loader'>
-            <Loader setLoading={setLoading} />
-          </motion.div>
-        ) : (
-          <>
-          <Header />
-          {children}
-          </>
-        )}
+            <motion.div key="loader">
+              <Loader setLoading={setLoading} />
+            </motion.div>
+          ) : (
+            <>
+              <Header />
+              {children}
+            </>
+          )}
         </AnimatePresence>
       </body>
     </html>

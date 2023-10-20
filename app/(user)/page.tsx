@@ -60,7 +60,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <div className="overflow-hidden hidden md:flex">
+      <div className="overscroll-none hidden md:flex">
         <IntroDesktop />
         <AboutDesktop />
         <ContactDesktop />
