@@ -60,7 +60,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <div className="overscroll-none hidden md:flex">
+      <div className="overflow-hidden hidden md:flex">
         <IntroDesktop />
         <AboutDesktop />
         <ContactDesktop />
@@ -74,11 +74,28 @@ export default async function HomePage() {
         <PhotosDesktop photos={photos} />
         <ProjectsDesktop projects={projects} />
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 md:hidden">
+      <div className="overflow-y-scroll py-20 grid gap-y-10 grid-cols-2 sm:grid-cols-4 justify-items-center md:hidden">
         <AboutMobile />
         <ProjectsMobile />
         <AboutMobile />
         <ProjectsMobile />
+        <AboutMobile />
+        <AboutMobile />
+        <ProjectsMobile />
+        <AboutMobile />
+        <ProjectsMobile />
+        <AboutMobile />
+        <AboutMobile />
+        <ProjectsMobile />
+        <AboutMobile />
+        <ProjectsMobile />
+        <AboutMobile />
+        <AboutMobile />
+        <AboutMobile />
+        <ProjectsMobile />
+        <AboutMobile />
+        <ProjectsMobile />
+        <AboutMobile />
       </div>
     </>
   );

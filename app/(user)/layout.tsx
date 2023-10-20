@@ -20,7 +20,7 @@ export default function RootLayout({
 
   return (
     <html>
-      <body id="top" className="mx-auto h-screen p-4 sm:p-6 overflow-hidden">
+      <body id="top" className="mx-auto h-screen p-4 sm:p-6">
         <AnimatePresence>
           {loading ? (
           <motion.div key='loader'>

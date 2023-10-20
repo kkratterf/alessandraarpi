@@ -12,7 +12,7 @@ function Header() {
       initial={{ y: -25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1.6, delay: 0.8 }}
-      className="relative"
+      className="fixed z-50"
     >
       <Link href="/" className="cursor-pointer">
         <nav className="bg-transparent z-0 cursor-pointer">
