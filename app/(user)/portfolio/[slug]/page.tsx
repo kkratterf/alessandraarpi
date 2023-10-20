@@ -4,7 +4,7 @@ import { groq } from 'next-sanity';
 import { client } from '../../../../lib/sanity.client';
 // Import customs
 import { Projects } from '../../../../typings';
-import Article from '../../../../components/Article';
+import ProjectContent from './ProjectContent';
 
 type Props = {
   params: {
@@ -36,20 +36,19 @@ async function ProjectPage({ params: { slug } }: Props) {
     {
         ...,
         client->,
-        category->,
         team->
     }
   `;
 
-  const projects: Projects = await client.fetch(query, { slug });
+  const project: Projects = await client.fetch(query, { slug });
 
   return (
     <>
-      <Article
-        category={projects.category}
-        title={projects.title}
-        image={projects.mainImage}
-        body={projects.body}
+      <ProjectContent
+        image={project.mainImage}
+        title={project.title}
+        category={project.category}
+        body={project.body}
       />
     </>
   );

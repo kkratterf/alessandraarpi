@@ -27,7 +27,7 @@ function ProjectList({ projects }: Props) {
         <div className="relative grid sm:grid-cols-2 gap-4 z-40 text-lg cursor-default  text-black">
           {projects.map((project) => (
             <div key={project._id} className="hover:cursor-pointer">
-              <ClientSideRoute route={`/projects/${project.slug.current}`}>
+              <ClientSideRoute route={`/portfolio/${project.slug.current}`}>
                 <div className="relative w-full aspect-w-1 h-64 rounded-md overflow-hidden safari_fix cursor-pointer">
                   <NextImage
                     className="object-center object-cover hover:scale-105 transition duration-300 rounded-md"

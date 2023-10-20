@@ -21,7 +21,7 @@ function MusicList({ musicList }: MusicListProps) {
     >
       <PageContainer>
         <h1 className="font-bold text-4xl pb-6">Musica in loop</h1>
-        <div className="relative z-40 text-lg cursor-default space-y-4 text-black">
+        <div className="relative z-40 grid sm:grid-cols-2 gap-4 text-lg cursor-default text-black">
           {musicList.map((musicList) => (
             <div key={musicList._id}>
               <iframe

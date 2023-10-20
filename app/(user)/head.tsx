@@ -1,28 +1,24 @@
 export default function Head() {
   return (
     <>
-      <title>Alessandra Arpi</title>
+      <title>Alessandra Arpi - Storie che risuonano.</title>
       <meta
         name="description"
-        content="I am Federico, a digital
-          product designer focused on user experience, user interface and
-          interaction."
+        content="Sono Alessandra Arpi, lavoro a Genova e mi occupo di comunicazione, con consulenze, strategie, scrittura testi, percorsi di formazione."
       />
       <meta
         property="og:title"
-        content="Federico Kratter Thaler - Portfolio 2023"
+        content="Alessandra Arpi - Storie che risuonano."
       />
       <meta
         property="og:description"
-        content="I am Federico, a digital
-          product designer focused on user experience, user interface and
-          interaction."
+        content="Sono Alessandra Arpi, lavoro a Genova e mi occupo di comunicazione, con consulenze, strategie, scrittura testi, percorsi di formazione."
       />
-      <meta property="og:url" content="https://kkratter.com" />
+      <meta property="og:url" content="https://alessandraarpi.it" />
       <meta property="og:image" content="/image/hello.jpg" />
       <meta
         property="og:image:secure_url"
-        content="http://www.kkratter.com/image/hello.jpg"
+        content="http://www.alessandraarpi.it/image/hello.jpg"
       />
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="author" content="Federico Kratter Thaler" />
@@ -30,7 +26,7 @@ export default function Head() {
       <meta property="og:type" content="website" />
       <meta
         property="og:site_name"
-        content="Federico Kratter Thaler - Portfolio 2023 "
+        content="Alessandra Arpi - Storie che risuonano."
       />
       <meta property="og:locale" content="it_IT" />
       <link
