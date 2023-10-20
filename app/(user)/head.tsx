@@ -15,10 +15,10 @@ export default function Head() {
         content="Sono Alessandra Arpi, lavoro a Genova e mi occupo di comunicazione, con consulenze, strategie, scrittura testi, percorsi di formazione."
       />
       <meta property="og:url" content="https://alessandraarpi.it" />
-      <meta property="og:image" content="/image/hello.jpg" />
+      <meta property="og:image" content="/image/cover.jpg" />
       <meta
         property="og:image:secure_url"
-        content="http://www.alessandraarpi.it/image/hello.jpg"
+        content="http://www.alessandraarpi.it/image/cover.jpg"
       />
       <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta name="author" content="Federico Kratter Thaler" />
