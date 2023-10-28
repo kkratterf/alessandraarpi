@@ -14,9 +14,9 @@ type ReadingListProps = {
 function ReadingList({ readingList }: ReadingListProps) {
   return (
     <motion.section
-      initial={{ y: 40, opacity: 0 }}
+      initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1.2, delay: 0 }}
+      transition={{ duration: 0.8, delay: 0 }}
       className="relative z-40"
     >
       <PageContainer>

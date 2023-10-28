@@ -22,12 +22,10 @@ function CookiesModal() {
           0.2 - Il mio ruolo – Titolare del trattamento
         </h6>
         <p>
-          I dati che raccolgo attraverso questo sito web sono trattati da me,
-          <span className="font-bold ml-1">
-            Alessandra Arpi, p. Iva IT01702610096
-          </span>
-          , con sede a Genova, in via Ausonia 2, e sono titolare del trattamento
-          dei dati che vengono raccolti dal mio sito web{' '}
+          I dati che raccolgo attraverso questo sito web sono trattati da me,{' '}
+          <b>Alessandra Arpi, p. Iva IT01702610096</b>, con sede a Genova, in
+          via Ausonia 2, e sono titolare del trattamento dei dati che vengono
+          raccolti dal mio sito web{' '}
           <a
             href="www.alessandraarpi.it"
             target="_blank"
@@ -51,62 +49,88 @@ function CookiesModal() {
       </div>
       <div className="space-y-2">
         <h6 className="text-xl font-bold">
-          1. Quali informazioni raccolgo e che dati tratto?
+          1 - Quali informazioni raccolgo e che dati tratto?
         </h6>
         <p>
           Il mio sito web è pensato come un contenitore. Raccolgo storie,
           suggerimenti, “caramelle” e tanti altri contenuti che voglio
-          condividere con te che leggi. Per farlo, ho bisogno di raccogliere
-          alcune informazioni e trattare alcuni dati. Ecco quali. Tratto i dati
-          di contatto: sono quelli che tu mi fornisci compilando il form
-          dedicato ai contatti, iscrivendoti alla newsletter, scaricando le
-          guide che ti metto a disposizione, iscrivendoti a corsi e webinar,
-          prenotando consulenze online, o facendo operazioni analoghe. Si tratta
-          di dati come nome, cognome e e-mail che mi permettono di rispondere
-          alle tue richieste di informazioni o di inoltrarti la newsletter
-          periodica Caramelle, appunto. In mancanza di questi dati non posso
-          rispondere alle tue domande, inserirti nella mia mailing list e darti
-          i prodotti e i servizi che mi hai richiesto. Il canale principale
-          grazie al quale raccolgo questi dati è la mia mailing list. Si tratta
-          dei contatti interessati a ricevere periodicamente i contenuti, le
-          storie e le “caramelle” che voglio condividere perché penso siano
-          utili e coinvolgenti. Scrivere contenuti interessanti, però, non
-          basta. Per far funzionare al meglio la mailng list occorre uno
-          strumento che gestisca da un lato i contenuti da mandare e dall’altro
-          le persone interessate a riceverli. In questo mi aiuta Mailchimp: ti
-          spiego meglio come funziona passo passo. Nel momento in cui decidi di
-          iscriverti alla mia newsletter, Caramelle, ti chiedo di indicarmi i
-          tuoi dati di contatto che mi servono per personalizzare la
-          comunicazione. Fatto questo, Mailchimp inoltra al mio account i tuoi
+          condividere con te che leggi. Per farlo, ho bisogno di{' '}
+          <b>raccogliere alcune informazioni e trattare alcuni dati</b>.<br />{' '}
+          Ecco quali. <br />
+          <b>Tratto i dati di contatto</b>: sono quelli che tu mi fornisci
+          compilando il form dedicato ai contatti, iscrivendoti alla newsletter,
+          scaricando le guide che ti metto a disposizione, iscrivendoti a corsi
+          e webinar, prenotando consulenze online, o facendo operazioni
+          analoghe.
+          <br /> Si tratta di dati come <b>nome, cognome e e-mail</b> che mi
+          permettono di rispondere alle tue richieste di informazioni o di
+          inoltrarti la newsletter periodica <b>Caramelle</b>, appunto.
+          <br /> In mancanza di questi dati non posso rispondere alle tue
+          domande, inserirti nella mia mailing list e darti i prodotti e i
+          servizi che mi hai richiesto.
+          <br /> Il canale principale grazie al quale raccolgo questi dati è la
+          mia <b>mailing list</b>. Si tratta dei contatti interessati a ricevere
+          periodicamente i contenuti, le storie e le “caramelle” che voglio
+          condividere perché penso siano utili e coinvolgenti. Scrivere
+          contenuti interessanti, però, non basta. Per far funzionare al meglio
+          la mailng list occorre uno strumento che gestisca da un lato i
+          contenuti da mandare e dall’altro le persone interessate a riceverli.
+          <br />
+          In questo mi aiuta <b>Substack</b>: ti spiego meglio come funziona
+          passo passo. Nel momento in cui decidi di iscriverti alla mia
+          newsletter, <b>Caramelle</b>, ti chiedo di indicarmi i tuoi dati di
+          contatto che mi servono per personalizzare la comunicazione.
+          <br /> Fatto questo, <b>Substack</b> inoltra al mio account i tuoi
           dati, la data e l’ora di registrazione e il metodo che hai usato per
           iscriverti, insieme al tuo consenso ad usare la tua e-mail per la
-          pubblicità su Facebook (di cui ti dico più avanti). E poi? A questo
-          punto i tuoi dati di contatto sono inseriti nella mailing list che è
-          la mia cartina tornasole dei contatti interessati a ciò che scrivo.
-          Così posso inoltrarti periodicamente pochi contenuti scelti con cura.
-          Avere a disposizione il tuo indirizzo mail mi consente di bussare alla
-          tua casella di posta ogni volta che ho una novità per te, una storia
-          da raccontarti o uno spunto da condividere.
+          pubblicità su Facebook (di cui ti dico più avanti).
+          <br /> E poi?
+          <br /> A questo punto i tuoi dati di contatto sono inseriti nella
+          mailing list che è la mia cartina tornasole dei contatti interessati a
+          ciò che scrivo. Così posso inoltrarti periodicamente pochi contenuti
+          scelti con cura.
+          <br /> Avere a disposizione il tuo indirizzo mail mi consente di
+          bussare alla tua casella di posta ogni volta che ho una novità per te,
+          una storia da raccontarti o uno spunto da condividere.
         </p>
       </div>
       <div className="space-y-2">
         <h6 className="text-xl font-bold">
-          1.1 Quali informazioni gestisce Mailchimp?
+          1.1 - Quali informazioni gestisce Substack?
         </h6>
         <p>
-          Sul mio server Mailchimp conserva tue informazioni come nome, cognome,
-          indirizzo e-mail e indirizzo IP. Queste informazioni sono conservate
-          da Mailchimp sui suoi server, ma per sicurezza anch’io ne conservo
-          un backup giornaliero in formato Excel che tengo in un luogo sicuro,
-          al riparo da occhi indiscreti. Per completezza, ecco la privacy policy
-          di Mailchimp: Chi può accedere a questi dati? In questo momento solo
-          io, Alessandra Arpi, ho accesso al mio account Mailchimp, per questo
-          nessun altro può vedere le informazioni che lì sono contenute. Come
-          cancellare questi dati? Se non vuoi più ricevere la mia newsletter,
-          sei libero di cancellarti in ogni momento. Per farlo, ti è sufficiente
-          cliccare sul footer che trovi in ogni mail. Se invece vuoi la
-          cancellazione di tutti i dati dal server di Mailchimp, scrivimi sempre
-          a: ciao@alessandraarpi.it
+          Sul mio server <b>Substack</b> conserva tue informazioni come nome,
+          cognome, indirizzo e-mail e indirizzo IP.
+          <br /> Queste informazioni sono conservate da Substack sui suoi
+          server, ma per sicurezza anch’io ne conservo un <b>backup</b>{' '}
+          giornaliero in formato Excel che tengo in un luogo sicuro, al riparo
+          da occhi indiscreti.
+          <br /> Per completezza, ecco la privacy policy di{' '}
+          <a
+            href="https://substack.com/privacy#:~:text=These%20cookies%20collect%20information%20on,individual%20identity%20can%20be%20established."
+            target="_blank"
+            rel="noreferrer"
+            className="underline underline-offset-2 text-red"
+          >
+            Substack
+          </a>
+          :
+          <br /> <b>Chi può accedere a questi dati?</b>
+          <br /> In questo momento solo io, <b>Alessandra Arpi</b>, ho accesso
+          al mio account Substack, per questo nessun altro può vedere le
+          informazioni che lì sono contenute.
+          <br /> <b>Come cancellare questi dati?</b>
+          <br /> Se non vuoi più ricevere la mia newsletter, puoi cancellarti in
+          ogni momento. Per farlo, ti è sufficiente cliccare sul footer che
+          trovi in ogni mail.
+          <br /> Se invece vuoi la cancellazione di tutti i dati dal server di
+          Substack, scrivimi sempre a:{' '}
+          <a
+            href="mailto:ciao@alessandraarpi.it?subject=Say Una mail al volo!"
+            className="underline underline-offset-2 text-red"
+          >
+            alessandra.arpi@gmail.com
+          </a>
         </p>
       </div>
       <div className="space-y-2">
@@ -211,68 +235,6 @@ function CookiesModal() {
           il monitoraggio del tasso d’apertura della posta. Fra le varie
           funzionalità digitali che metto a disposizione c’è la possibilità di
           fare consulenza su Zoom, ecco la sua privacy policy. 
-        </p>
-      </div>
-      <div className="space-y-2">
-        <h6 className="text-xl font-bold">3 - Cookie analitici</h6>
-        <p>
-          Come ti dicevo poco sopra, il mio sito si avvale di Google Analytics
-          per raccogliere le informazioni utili a capire quali contenuti
-          funzionano e quali no. Anche per l’utilizzo di questo tipo di cookie è
-          necessario il tuo consenso esplicito. Se dopo aver preso visione
-          dell’informativa breve contenuta nell’apposito banner, decidi di
-          proseguire la navigazione e di usufruire dei servizi di terze parti
-          che comportano l’installazione di Cookie, hai liberamente manifestato
-          il tuo consenso all’uso di questi cookie. Ecco la cookie policy di
-          Google Analytics. Nel caso volessi disabilitare l’azione di Google
-          Analytics, puoi farlo attraverso l’opt-out.  Come puoi acconsentire
-          all’uso dei cookie da parte del mio sito web?  Se, appena atterrato
-          sul sito, prendi visione dell’informativa breve nel banner e decidi di
-          proseguire la navigazione, accettando espressamente di usufruire dei
-          servizi di terze parti che comportano l’installazione di Cookie,
-          questo rappresenta il tuo consenso manifestato in modo informato e
-          consapevole. Eliminazione o disattivazione dei cookie – Opt-out Eccoci
-          finalmente giunti alla sezione dedicata al tuo diritto di
-          opt-out. Come ti dicevo poco più sopra, i cookie possono essere
-          disattivati, fatta eccezione per quelli tecnici. Puoi evitare
-          l’installazione dei Cookie mantenendo il relativo banner visibile o
-          attraverso le apposite funzioni disponibili sul tuo browser. Di
-          seguito ecco i link che spiegano come disabilitare i cookie per i
-          browser più diffusi: Internet Explorer Google Chrome Mozilla
-          Firefox  Apple Safari Ti informo che la disabilitazione dei cookie
-          tramite le impostazioni del browser comporterà l’impossibilità di
-          fruire di alcuni servizi del sito. 3. Perché tratto i tuoi dati?
-          Terminata la descrizione dei dati che tratto, ora voglio spiegarti
-          perché tratto i tuoi dati, come lo faccio e su quale base
-          giuridica. Tratto i tuoi dati in modo lecito, corretto e trasparente,
-          proprio come richiesto dalla normativa (art. 13 GDPR). Raccolgo i tuoi
-          dati con finalità precise e ogni volta che lo faccio, lo faccio sulla
-          scorta di una base giuridica ben definita. Ma andiamo con ordine, e
-          vediamo le finalità del trattamento. Raccolgo i tuoi dati per: 1)
-          ottemperare agli obblighi di legge cui sono soggetta In questo caso la
-          base giuridica del trattamento è proprio la legge che me lo impone. 2)
-          fornirti servizi come guide in formato .pdf, webinar, attività
-          accessorie Questo tipo di trattamento è facoltativo e la sua base
-          giuridica è il tuo consenso liberamente espresso. Per questo la
-          mancata comunicazione di uno o più dati mi impedisce di erogare questo
-          servizio. 3) poter rispondere a ogni tua richiesta di informazioni
-          inoltrata attraverso il form contatti, via e-mail  Anche questo tipo
-          di trattamento è facoltativo e la sua base giuridica poggia sul tuo
-          consenso liberamente espresso. Per questo la mancata comunicazione di
-          uno o più dati mi impedisce di risponderti o mandarti ciò che ti
-          serve. 4) tenerti aggiornat3 sui contenuti che realizzo, anche tramite
-          l’inoltro di newsletter Ancora una volta, il trattamento dei tuoi dati
-          è facoltativo e la sua base giuridica è costituita dal tuo consenso
-          liberamente espresso. Per questo la mancata comunicazione di uno o più
-          dati non mi consente di inviarti i miei contenuti. 5) per darti la
-          consulenza che mi hai chiesto In questo caso la base giuridica del
-          trattamento è proprio l’esecuzione del contratto che ci lega. 6) 
-          consentire al mio sito di funzionare al meglio, attraverso l’analisi
-          statistica del traffico e del comportamento degli utenti Anche qui, il
-          trattamento dei tuoi dati è facoltativo e la sua base giuridica è il
-          tuo consenso. La mancata comunicazione di questi dati non mi consente
-          di capire cosa funziona e cosa no, ma se preferisci non dare il
-          consenso, va bene lo stesso.
         </p>
       </div>
       <div className="space-y-2">

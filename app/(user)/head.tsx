@@ -1,18 +1,18 @@
 export default function Head() {
   return (
     <>
-      <title>Alessandra Arpi - Storie che risuonano.</title>
+      <title>Alessandra Arpi - Parole che risuonano</title>
       <meta
         name="description"
-        content="Sono Alessandra Arpi, lavoro a Genova e mi occupo di comunicazione, con consulenze, strategie, scrittura testi, percorsi di formazione."
+        content="Sono Alessandra Arpi, sono una copywriter e una consulente di comunicazione e di lavoro faccio parlare aziende, professionisty e istituzioni come persone."
       />
       <meta
         property="og:title"
-        content="Alessandra Arpi - Storie che risuonano."
+        content="Alessandra Arpi - Parole che risuonano"
       />
       <meta
         property="og:description"
-        content="Sono Alessandra Arpi, lavoro a Genova e mi occupo di comunicazione, con consulenze, strategie, scrittura testi, percorsi di formazione."
+        content="Sono Alessandra Arpi, sono una copywriter e una consulente di comunicazione e di lavoro faccio parlare aziende, professionisty e istituzioni come persone."
       />
       <meta property="og:url" content="https://alessandraarpi.it" />
       <meta property="og:image" content="/image/cover.jpg" />
@@ -26,7 +26,7 @@ export default function Head() {
       <meta property="og:type" content="website" />
       <meta
         property="og:site_name"
-        content="Alessandra Arpi - Storie che risuonano."
+        content="Alessandra Arpi - Parole che risuonano"
       />
       <meta property="og:locale" content="it_IT" />
       <link

@@ -18,7 +18,7 @@ function IconMobile({
     <motion.section
       initial={{ y: 25, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 2, delay: 0 }}
+      transition={{ duration: 0.8, delay: 0 }}
       className="relative"
     >
       <div className="grid w-36 justify-items-center">
