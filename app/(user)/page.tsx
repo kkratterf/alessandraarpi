@@ -85,16 +85,16 @@ export default async function HomePage() {
       </div>
       <div className="overflow-y-scroll py-20 grid gap-y-10 grid-cols-2 sm:grid-cols-4 justify-items-center md:hidden">
         <AboutMobile />
-        <ContactMobile />
-        <CookiesMobile />
-        <FooterMobile />
-        <MemoMobile />
-        <NewsletterMobile />
-        <ReadingListMobile />
-        <ToReadListMobile />
-        <MusicMobile />
-        <PhotosMobile />
         <ProjectsMobile />
+        <ContactMobile />
+        <NewsletterMobile />
+        <PhotosMobile />
+        <ReadingListMobile />
+        <MusicMobile />
+        <ToReadListMobile />
+        <MemoMobile />
+        <FooterMobile />
+        <CookiesMobile />
       </div>
     </>
   );
