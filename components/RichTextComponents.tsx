@@ -1,17 +1,16 @@
 // Import core
-// Import third parts
 import Link from "next/link";
 import Image from "next/image";
 // Import customs
-import urlFor from "../lib/urlFor";
+import urlFor from "@/lib/urlFor";
 
 export const RichTextComponents = {
   types: {
     image: ({ value }: any) => {
       return (
-        <div className="relative flex w-full h-auto sm:my-10 rounded-xl bg-grey-light dark:bg-pop-dark overflow-hidden">
+        <div className="relative flex w-full h-auto sm:my-10 bg-cream rounded-xl bg-grey-light dark:bg-pop-dark overflow-hidden">
           <Image
-            className="object-cover object-center rounded-xl"
+            className="object-cover object-center bg-cream rounded-xl"
             src={urlFor(value).url()}
             alt="Project Image"
             width={1680}

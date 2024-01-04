@@ -1,7 +1,6 @@
 // Import core
-// Import third parts
 // Import customs
-import { ReadingList } from '../../typings';
+import { ReadingList } from '@/typings';
 
 type ReadingListModalProps = {
   readingList: ReadingList[];

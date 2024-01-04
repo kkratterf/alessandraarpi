@@ -2,13 +2,12 @@
 
 // Import core
 import { useState } from 'react';
-// Import third parts
 // Import customs
-import { ToReadList } from '../../typings';
-import IconDesktop from '../IconDesktop';
-import ModalBig from '../ModalStructure/ModalBig';
-import ToReadListModal from '../ModalContent/ToReadList';
-import { delay_4 } from '../../lib/delayConstants';
+import { ToReadList } from '@/typings';
+import IconDesktop from '@/components/IconDesktop';
+import ModalBig from '@/components/ModalStructure/ModalBig';
+import ToReadListModal from '@/components/ModalContent/ToReadList';
+import { delay_4 } from '@/lib/delayConstants';
 
 const title_toReadList = 'leggerò';
 const extension_toReadList = '.txt';

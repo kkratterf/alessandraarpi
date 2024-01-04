@@ -2,9 +2,8 @@
 
 // Import core
 import NextImage from 'next/image';
-// Import third parts
 // Import customs
-import urlFor from '../../lib/urlFor';
+import urlFor from '@/lib/urlFor';
 
 type PhotoModalProps = {
   title: string;

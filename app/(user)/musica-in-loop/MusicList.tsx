@@ -1,11 +1,10 @@
 'use client';
 
 // Import core
-// Import third parts
 import { motion } from 'framer-motion';
 // Import customs
-import PageContainer from '../../../components/PageContainer';
-import { MusicList } from '../../../typings';
+import PageContainer from '@/components/PageContainer';
+import { MusicList } from '@/typings';
 
 type MusicListProps = {
   musicList: MusicList[];

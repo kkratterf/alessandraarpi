@@ -2,15 +2,14 @@
 
 // Import core
 import { useState } from 'react';
-// Import third parts
 // Import customs
-import { Photos } from '../../typings';
-import IconDesktop from '../IconDesktop';
-import ModalBig from '../ModalStructure/ModalBig';
-import PhotosModal from '../ModalContent/Photos';
-import ModalSmall from '../ModalStructure/ModalSmall';
-import PhotoModal from '../ModalContent/Photo';
-import { delay_4 } from '../../lib/delayConstants';
+import { Photos } from '@/typings';
+import IconDesktop from '@/components/IconDesktop';
+import ModalBig from '@/components/ModalStructure/ModalBig';
+import PhotosModal from '@/components/ModalContent/Photos';
+import ModalSmall from '@/components/ModalStructure/ModalSmall';
+import PhotoModal from '@/components/ModalContent/Photo';
+import { delay_4 } from '@/lib/delayConstants';
 
 const title_photos = 'foto_Ale';
 const extension_photos = '.omg';

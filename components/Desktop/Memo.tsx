@@ -2,12 +2,11 @@
 
 // Import core
 import { useState } from 'react';
-// Import third parts
 // Import customs
-import IconDesktop from '../IconDesktop';
-import ModalBig from '../ModalStructure/ModalBig';
-import MemoModal from '../ModalContent/Memo';
-import { delay_2 } from '../../lib/delayConstants';
+import IconDesktop from '@/components/IconDesktop';
+import ModalBig from '@/components/ModalStructure/ModalBig';
+import MemoModal from '@/components/ModalContent/Memo';
+import { delay_2 } from '@/lib/delayConstants';
 
 const title_memo = 'appunti a caso';
 const extension_memo = '.txt';

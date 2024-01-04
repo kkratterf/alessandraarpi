@@ -2,12 +2,11 @@
 
 // Import core
 import { useState } from 'react';
-// Import third parts
 // Import customs
-import IconDesktop from '../IconDesktop';
-import ModalBig from '../ModalStructure/ModalBig';
-import FooterModal from '../ModalContent/Footer';
-import { delay_3 } from '../../lib/delayConstants';
+import IconDesktop from '@/components/IconDesktop';
+import ModalBig from '@/components/ModalStructure/ModalBig';
+import FooterModal from '@/components/ModalContent/Footer';
+import { delay_3 } from '@/lib/delayConstants';
 
 const title_footer = 'footer';
 const extension_footer = '.txt';

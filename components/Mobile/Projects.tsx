@@ -1,10 +1,9 @@
 'use client';
 
 // Import core
-// Import third parts
 // Import customs
-import IconMobile from '../IconMobile';
-import ClientSideRoute from '../ClientSideRoute';
+import IconMobile from '@/components/IconMobile';
+import ClientSideRoute from '@/components/ClientSideRoute';
 
 const ProjectsMobile = () => {
 

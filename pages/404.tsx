@@ -1,9 +1,8 @@
 // Import core
-// Import third parts
 import Link from "next/link";
 // Import customs
-import "../styles/font.css";
-import "../styles/globals.css";
+import "@/styles/font.css";
+import "@/styles/globals.css";
 
 export default function Custom404() {
   return (

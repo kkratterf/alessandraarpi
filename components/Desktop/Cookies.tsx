@@ -2,12 +2,11 @@
 
 // Import core
 import { useState } from 'react';
-// Import third parts
 // Import customs
-import IconDesktop from '../IconDesktop';
-import ModalBig from '../ModalStructure/ModalBig';
-import CookiesModal from '../ModalContent/Cookies';
-import { delay_4 } from '../../lib/delayConstants';
+import IconDesktop from '@/components/IconDesktop';
+import ModalBig from '@/components/ModalStructure/ModalBig';
+import CookiesModal from '@/components/ModalContent/Cookies';
+import { delay_4 } from '@/lib/delayConstants';
 
 const title_cookies = 'biscotti & privacy';
 const extension_cookies = '.txt';

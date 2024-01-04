@@ -2,15 +2,14 @@
 
 // Import core
 import { useState } from 'react';
-// Import third parts
 // Import customs
-import { Projects } from '../../typings';
-import IconDesktop from '../IconDesktop';
-import ModalExtraBig from '../ModalStructure/ModalExtraBig';
-import ProjectsModal from '../ModalContent/Projects';
-import ModalExtraLarge from '../ModalStructure/ModalExtraLarge';
-import ProjectModal from '../ModalContent/Project';
-import { delay_2 } from '../../lib/delayConstants';
+import { Projects } from '@/typings';
+import IconDesktop from '@/components/IconDesktop';
+import ModalExtraBig from '@/components/ModalStructure/ModalExtraBig';
+import ProjectsModal from '@/components/ModalContent/Projects';
+import ModalExtraLarge from '@/components/ModalStructure/ModalExtraLarge';
+import ProjectModal from '@/components/ModalContent/Project';
+import { delay_2 } from '@/lib/delayConstants';
 
 const title_projects = 'portfolio';
 const extension_projects = '.omg';

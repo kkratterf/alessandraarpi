@@ -1,10 +1,9 @@
 'use client';
 
 // Import core
-// Import third parts
 // Import customs
-import { Block } from '../../typings';
-import Article from '../Article';
+import { Block } from '@/typings';
+import Article from '@/components/Article';
 
 type ProjectModalProps = {
   title: string;

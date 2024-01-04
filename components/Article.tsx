@@ -1,13 +1,12 @@
 "use client"
 
 // Import core
-// Import third parts
 import Image, { StaticImageData } from 'next/image';
 import { PortableText } from "@portabletext/react";
 // Import customs
-import { RichTextComponents } from "../components/RichTextComponents";
-import urlFor from '../lib/urlFor';
-import { Block } from '../typings';
+import { RichTextComponents } from "@/components/RichTextComponents";
+import urlFor from '@/lib/urlFor';
+import { Block } from '@/typings';
 
 type ArticleProps = {
   category: string;

@@ -2,13 +2,12 @@
 
 // Import core
 import { useState } from 'react';
-// Import third parts
 // Import customs
-import { MusicList } from '../../typings';
-import IconDesktop from '../IconDesktop';
-import ModalBig from '../ModalStructure/ModalBig';
-import MusicModal from '../ModalContent/Music';
-import { delay_3 } from '../../lib/delayConstants';
+import { MusicList } from '@/typings';
+import IconDesktop from '@/components/IconDesktop';
+import ModalBig from '@/components/ModalStructure/ModalBig';
+import MusicModal from '@/components/ModalContent/Music';
+import { delay_3 } from '@/lib/delayConstants';
 
 const title_music = 'musica in loop';
 const extension_music = '.omg';

@@ -1,32 +1,31 @@
 // Import core
 import React from 'react';
-// Import third parts
 import { groq } from 'next-sanity';
-import { client } from '../../lib/sanity.client';
+import { client } from '@/lib/sanity.client';
 // Import customs
-import AboutDesktop from '../../components/Desktop/About';
-import ReadingListDesktop from '../../components/Desktop/ReadingList';
-import ToReadListDesktop from '../../components/Desktop/ToReadList';
-import MusicListDesktop from '../../components/Desktop/Music';
-import PhotosDesktop from '../../components/Desktop/Photos';
-import ContactDesktop from '../../components/Desktop/Contact';
-import CookiesDesktop from '../../components/Desktop/Cookies';
-import FooterDesktop from '../../components/Desktop/Footer';
-import MemoDesktop from '../../components/Desktop/Memo';
-import NewsletterDesktop from '../../components/Desktop/Newsletter';
-import ProjectsDesktop from '../../components/Desktop/Projects';
-import IntroDesktop from '../../components/Desktop/Intro';
-import AboutMobile from '../../components/Mobile/About';
-import ProjectsMobile from '../../components/Mobile/Projects';
-import FooterMobile from '../../components/Mobile/Footer';
-import CookiesMobile from '../../components/Mobile/Cookies';
-import ContactMobile from '../../components/Mobile/Contact';
-import NewsletterMobile from '../../components/Mobile/Newsletter';
-import ReadingListMobile from '../../components/Mobile/ReadingList';
-import ToReadListMobile from '../../components/Mobile/ToReadList';
-import MusicMobile from '../../components/Mobile/Music';
-import PhotosMobile from '../../components/Mobile/Photos';
-import MemoMobile from '../../components/Mobile/Memo';
+import AboutDesktop from '@/components/Desktop/About';
+import ReadingListDesktop from '@/components/Desktop/ReadingList';
+import ToReadListDesktop from '@/components/Desktop/ToReadList';
+import MusicListDesktop from '@/components/Desktop/Music';
+import PhotosDesktop from '@/components/Desktop/Photos';
+import ContactDesktop from '@/components/Desktop/Contact';
+import CookiesDesktop from '@/components/Desktop/Cookies';
+import FooterDesktop from '@/components/Desktop/Footer';
+import MemoDesktop from '@/components/Desktop/Memo';
+import NewsletterDesktop from '@/components/Desktop/Newsletter';
+import ProjectsDesktop from '@/components/Desktop/Projects';
+import IntroDesktop from '@/components/Desktop/Intro';
+import AboutMobile from '@/components/Mobile/About';
+import ProjectsMobile from '@/components/Mobile/Projects';
+import FooterMobile from '@/components/Mobile/Footer';
+import CookiesMobile from '@/components/Mobile/Cookies';
+import ContactMobile from '@/components/Mobile/Contact';
+import NewsletterMobile from '@/components/Mobile/Newsletter';
+import ReadingListMobile from '@/components/Mobile/ReadingList';
+import ToReadListMobile from '@/components/Mobile/ToReadList';
+import MusicMobile from '@/components/Mobile/Music';
+import PhotosMobile from '@/components/Mobile/Photos';
+import MemoMobile from '@/components/Mobile/Memo';
 
 export const revalidate = 6000;
 

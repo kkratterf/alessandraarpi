@@ -2,7 +2,6 @@
 
 // Import core
 import Link from 'next/link';
-// Import third parts
 import { motion } from 'framer-motion';
 // Import customs
 

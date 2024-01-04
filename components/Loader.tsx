@@ -2,7 +2,6 @@
 
 // Import core
 import { useEffect } from 'react';
-// Import third parts
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 // Import customs

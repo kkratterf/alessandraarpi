@@ -1,11 +1,10 @@
 'use client';
 
 // Import core
-// Import third parts
 import NextImage from 'next/image';
 // Import customs
-import { Projects } from '../../typings';
-import urlFor from '../../lib/urlFor';
+import { Projects } from '@/typings';
+import urlFor from '@/lib/urlFor';
 
 type ProjectsModalProps = {
   projects: Projects[];

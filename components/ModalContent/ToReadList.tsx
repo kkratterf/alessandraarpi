@@ -1,7 +1,6 @@
 // Import core
-// Import third parts
 // Import customs
-import { ToReadList } from '../../typings';
+import { ToReadList } from '@/typings';
 
 type ToReadListModalProps = {
   toReadList: ToReadList[];

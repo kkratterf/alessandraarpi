@@ -2,12 +2,11 @@
 
 // Import core
 import { useState } from 'react';
-// Import third parts
 // Import customs
-import IconDesktop from '../IconDesktop';
-import ModalBig from '../ModalStructure/ModalBig';
-import NewsletterModal from '../ModalContent/Newsletter';
-import { delay_3 } from '../../lib/delayConstants';
+import IconDesktop from '@/components/IconDesktop';
+import ModalBig from '@/components/ModalStructure/ModalBig';
+import NewsletterModal from '@/components/ModalContent/Newsletter';
+import { delay_3 } from '@/lib/delayConstants';
 
 const title_newsletter = 'newsletter';
 const extension_newsletter = '.new';

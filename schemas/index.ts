@@ -1,9 +1,9 @@
-import blockContent from './blockContent';
-import musicList from './musicList';
-import photos from './photos';
-import projects from './projects';
-import readingList from './readingList';
-import toReadList from './toReadList';
+import blockContent from '@/schemas/blockContent';
+import musicList from '@/schemas/musicList';
+import photos from '@/schemas/photos';
+import projects from '@/schemas/projects';
+import readingList from '@/schemas/readingList';
+import toReadList from '@/schemas/toReadList';
 
 export const schemaTypes = [
   readingList,

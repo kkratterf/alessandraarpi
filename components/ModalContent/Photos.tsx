@@ -1,11 +1,10 @@
 'use client';
 
 // Import core
-// Import third parts
 import NextImage from 'next/image';
 // Import customs
-import { Photos } from '../../typings';
-import urlFor from '../../lib/urlFor';
+import { Photos } from '@/typings';
+import urlFor from '@/lib/urlFor';
 
 type PhotosModalProps = {
   photos: Photos[];

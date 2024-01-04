@@ -2,10 +2,9 @@
 
 // Import core
 import { useState } from 'react';
-// Import third parts
 // Import customs
-import ModalIntro from '../ModalStructure/ModalIntro';
-import IntroModal from '../ModalContent/Intro';
+import ModalIntro from '@/components/ModalStructure/ModalIntro';
+import IntroModal from '@/components/ModalContent/Intro';
 
 const IntroDesktop = () => {
   const [isOpen, setIsOpen] = useState(true);

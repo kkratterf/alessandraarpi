@@ -1,9 +1,8 @@
 // Import core
 import React from 'react';
-// Import third parts
 import { previewData } from 'next/headers';
 import { groq } from 'next-sanity';
-import { client } from '../../../lib/sanity.client';
+import { client } from '@/lib/sanity.client';
 import PreviewSuspense from './PreviewSuspence';
 // Import customs
 import PreviewProjectList from './PreviewProjectList';

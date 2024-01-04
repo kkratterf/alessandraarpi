@@ -1,10 +1,9 @@
 // Import core
 import React from 'react';
-// Import third parts
 import { groq } from 'next-sanity';
-import { client } from '../../../lib/sanity.client';
 // Import customs
 import PhotosList from './PhotosList';
+import { client } from '@/lib/sanity.client';
 
 export const revalidate = 6000;
 

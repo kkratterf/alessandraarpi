@@ -1,7 +1,6 @@
 // Import core
-// Import third parts
 // Import customs
-import { MusicList } from '../../typings';
+import { MusicList } from '@/typings';
 
 type MusicListModalProps = {
   musicList: MusicList[];

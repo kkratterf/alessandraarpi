@@ -2,13 +2,13 @@
 
 // Import core
 import { useEffect, useState } from 'react';
-// Import third parts
 import { motion, AnimatePresence } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 // Import customs
-import '../../styles/globals.css';
-import '../../styles/font.css';
-import Header from '../../components/Header';
-import Loader from '../../components/Loader';
+import '@/styles/globals.css';
+import '@/styles/font.css';
+import Header from '@/components/Header';
+import Loader from '@/components/Loader';
 
 export default function RootLayout({
   children,
@@ -33,6 +33,7 @@ export default function RootLayout({
             </>
           )}
         </AnimatePresence>
+        <Analytics />
       </body>
     </html>
   );

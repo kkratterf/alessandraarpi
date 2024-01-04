@@ -1,7 +1,6 @@
 // Import core
-// Import third parts
 import { groq } from 'next-sanity';
-import { client } from '../../../lib/sanity.client';
+import { client } from '@/lib/sanity.client';
 // Import customs
 import ToReadList from './ToReadList';
 

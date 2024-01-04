@@ -2,12 +2,11 @@
 
 // Import core
 import { useState } from 'react';
-// Import third parts
 // Import customs
-import IconDesktop from '../IconDesktop';
-import ModalBig from '../ModalStructure/ModalBig';
-import ContactModal from '../ModalContent/Contact';
-import { delay_2 } from '../../lib/delayConstants';
+import IconDesktop from '@/components/IconDesktop';
+import ModalBig from '@/components/ModalStructure/ModalBig';
+import ContactModal from '@/components/ModalContent/Contact';
+import { delay_2 } from '@/lib/delayConstants';
 
 const title_contact = 'ci sentiamo?';
 const extension_contact = '.txt';

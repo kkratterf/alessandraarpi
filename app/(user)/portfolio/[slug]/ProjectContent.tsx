@@ -1,12 +1,11 @@
 'use client';
 
 // Import core
-// Import third parts
 import { motion } from 'framer-motion';
 // Import customs
-import { Block } from '../../../../typings';
-import Article from '../../../../components/Article';
-import PageContainer from '../../../../components/PageContainer';
+import { Block } from '@/typings';
+import Article from '@/components/Article';
+import PageContainer from '@/components/PageContainer';
 
 type ProjectContentProps = {
   title: string;

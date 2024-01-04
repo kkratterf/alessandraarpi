@@ -1,8 +1,7 @@
 // Import core
-// Import third parts
 import { easeOut, motion } from 'framer-motion';
 // Import customs
-import CloseButton from '../CloseButton';
+import CloseButton from '@/components/CloseButton';
 
 interface ModalExtraLargeProps {
   children: React.ReactNode;
