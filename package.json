@@ -2,7 +2,7 @@
   "name": "alessandraarpi",
   "version": "1.0.1",
   "description": "Alessandra Arpi Portfolio",
-  "private": false,
+  "license": "MIT",
   "author": "Federico Kratter Thaler",
   "scripts": {
     "dev": "next dev",
