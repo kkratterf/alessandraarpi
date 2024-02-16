@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply bg-cream;
+  }
 
   body {
     @apply bg-cream;
@@ -33,28 +36,27 @@
     @apply text-black cursor-default;
   }
 
-  p, blockquote {
+  p,
+  blockquote {
     @apply text-black cursor-default;
   }
 
   li {
     @apply text-black cursor-default;
   }
-
 }
 
 @layer components {
-
   .icon-style-global {
-    @apply fixed z-10
+    @apply fixed z-10;
   }
 
   .modal-style-global {
-    @apply fixed z-20
+    @apply fixed z-20;
   }
 
   .submodal-style-global {
-    @apply fixed z-30
+    @apply fixed z-30;
   }
 
   .navitem {
@@ -65,8 +67,7 @@
     @apply cursor-pointer text-sm italic font-medium uppercase sm:opacity-70 sm:hover:opacity-100 text-cream dark:text-red transition duration-300;
   }
 
-
-    .safari_fix {
-      -webkit-mask-image: -webkit-radial-gradient(white, black);
-    }
+  .safari_fix {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+  }
 }
