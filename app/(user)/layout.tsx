@@ -42,8 +42,8 @@ export default function RootLayout({
         "acceptButtonCaptionColor": "white",
         "customizeButtonColor": "#FEF4E8",
         "customizeButtonCaptionColor": "#5F554A",
-        "rejectButtonColor": "#FEF4E8",
-        "rejectButtonCaptionColor": "#5F554A",
+        "rejectButtonColor": "#CE564B",
+        "rejectButtonCaptionColor": "white",
         "textColor": "#5F554A",
         "backgroundColor": "#FFFFFF"
       }
