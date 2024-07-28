@@ -4,6 +4,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Analytics } from '@vercel/analytics/react';
+import Script from 'next/script';
 // Import customs
 import '@/styles/globals.css';
 import '@/styles/font.css';
@@ -15,8 +16,39 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
   const [loading, setLoading] = useState(true);
+
+  const iubendaConfig = `
+    var _iub = _iub || [];
+    _iub.csConfiguration = {
+      "consentOnContinuedBrowsing": false,
+      "ccpaAcknowledgeOnDisplay": true,
+      "whitelabel": false,
+      "lang": "it",
+      "enableCcpa": true,
+      "countryDetection": true,
+      "googleAdditionalConsentMode": true,
+      "isTCFConsentGlobal": false,
+      "perPurposeConsent": true,
+      "enableTcf": true,
+      "cookiePolicyId": ${process.env.NEXT_PUBLIC_IUBENDA_COOKIE_POLICY_ID},
+      "siteId": ${process.env.NEXT_PUBLIC_IUBENDA_SITE_ID},
+      "banner": {
+        "acceptButtonDisplay": true,
+        "customizeButtonDisplay": true,
+        "position": "float-bottom-left",
+        "rejectButtonDisplay": true,
+        "acceptButtonColor": "#CE564B",
+        "acceptButtonCaptionColor": "white",
+        "customizeButtonColor": "#FEF4E8",
+        "customizeButtonCaptionColor": "#5F554A",
+        "rejectButtonColor": "#CE564B",
+        "rejectButtonCaptionColor": "white",
+        "textColor": "#5F554A",
+        "backgroundColor": "#FFFFFF"
+      }
+    };
+  `;
 
   return (
     <html>
@@ -35,6 +67,17 @@ export default function RootLayout({
         </AnimatePresence>
         <Analytics />
       </body>
+      <Script src="https://example.com/script.js" />
+      <Script
+        id="iubenda-cs"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: iubendaConfig }}
+      />
+      <Script src="https://cs.iubenda.com/autoblocking/2054466.js" />
+      <Script src="//cdn.iubenda.com/cs/tcf/stub-v2.js" />
+      <Script src="//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js" />
+      <Script src="//cdn.iubenda.com/cs/ccpa/stub.js" />
+      <Script src="//cdn.iubenda.com/cs/iubenda_cs.js" async />
     </html>
   );
 }
